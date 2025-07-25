@@ -33,3 +33,7 @@
    ```
    → rm -rf ~/.config/hypr.bak
    ```
+
+- - - 
+
+¡Don't add .git or .ssh stuff! it doesn't encrypt /!TO DO LOOK UP HOW TO BACK UP THAT WITH ENCRYPTION !\
