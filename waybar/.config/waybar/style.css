@@ -1,87 +1,71 @@
-/* @import "$HOME/.config/colors/colors.css" */
-@import "../colors/colors.css";
-
 * {
-  font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font";
-  font-size: 16px;
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 13px;
   font-weight: bold;
   background-color: transparent;
-  border-radius: 5px;
+  border-radius: 0;
   min-height: 0;
 }
 
-window,
-tooltip {
-  background-color: @background;
+window {
+  background-color: transparent;
 }
 
 #waybar {
-  background: black;
+  background: #000000;
   border-radius: 0;
-  padding: 8px 0;
+}
+
+/* Left side modules */
+#custom-update,
+#workspaces {
+  background-color: transparent;
+  color: white;
+  margin: 0;
+  padding: 4px 12px;
+}
+
+#custom-update {
+  margin-left: 0;
+  border-radius: 0;
 }
 
 #workspaces {
-  margin: 3px 0;
+  border-radius: 0;
 }
 
 #workspaces button {
-  color: @foreground;
+  color: white;
   border: none;
-  padding: 4px 8px;
+  padding: 2px 4px;
+  margin: 0 1px;
+  background-color: transparent;
+  border-radius: 0;
+  min-width: 20px;
 }
 
 #workspaces button.active {
-  color: @pink;
-  border: 2px solid @pink;
-  padding: 4px 12px;
-  margin: 0 2px;
-}
-
-#workspaces button.urgent {
-  background-color: @red;
-  padding: 4px 12px;
-}
-
-#custom-power,
-#tray,
-#bluetooth,
-#network,
-#battery,
-#pulseaudio,
-#clock {
-  color: @foreground;
-  margin: 3px 0;
-  padding: 4px 12px;
-}
-
-#bluetooth {
-  color: #89B4FA;
-  font-size: 18px;
-}
-
-#network {
-  color: @green;
-  font-size: 18px;
-}
-
-#battery {
-  color: rgb(202, 82, 226);
-  font-size: 18px;
-}
-
-#pulseaudio {
-  color: orange;
-  font-size: 18px;
-}
-
-#clock {
-  margin-right: 10px;
   color: white;
-  font-size: 14px;
+  border: 1px solid white;
+  padding: 2px 4px;
+  margin: 0 1px;
+  min-width: 20px;
 }
 
-#custom-power {
-  margin-left: 10px;
-  padding: 4px 15px 4px 20px;
+/* Center tray */
+#tray {
+  background-color: transparent;
+  color: white;
+  margin: 0;
+  padding: 4px 12px;
+}
+
+/* Right side */
+#clock {
+  background-color: transparent;
+  color: white;
+  margin: 0;
+  margin-right: 0;
+  padding: 4px 12px;
+  border-radius: 0;
 }

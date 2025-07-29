@@ -1,107 +1,30 @@
 {
-   "modules-left": [
-    "custom/power",
+  "modules-left": [
+    "custom/update",
     "hyprland/workspaces"
   ],
-  "modules-center": [
-    "tray"
-  ],
+  "modules-center": ["tray"],
   "modules-right": [
-    "bluetooth",
-    "network",
-    "battery",
-    "pulseaudio",
     "clock"
   ],
-  "custom/power": {
-    "format": "",
-    "on-click": "wlogout -b 5",
-    "tooltip": false
+  "custom/update": {
+    "format": "",
+    "tooltip": false,
+    "on-click": "ghostty -e /home/koes/dotfiles/waybar/.config/waybar/scripts/update-system.sh"
   },
   "hyprland/workspaces": {
     "disable-scroll": true,
     "all-outputs": true,
     "warp-on-scroll": false,
-    "format": "{icon}",
-    "format-map": {
-      "1": "1",
-      "2": "2",
-      "3": "3",
-      "4": "4",
-      "5": "5",
-      "6": "6",
-      "7": "7",
-      "8": "8"
-    },
-    "persistent-workspaces": {
-      "*": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8
-      ]
-    }
+    "format": "{name}",
+    "cursor": true
   },
   "tray": {
-    "icon-size": 28,
-    "spacing": 10,
-    "show-passive-items": true
-  },
-  "bluetooth": {
-    "format": "",
-    "format-disabled": "󰂲",
-    "format-connected": "",
-    "on-click": "blueman-manager",
-    "tooltip": false
-  },
-  "network": {
-    "format-wifi": "",
-    "format-ethernet": "",
-    "format-linked": "",
-    "format-disconnected": "",
-    "tooltip": false
-  },
-  "battery": {
-    "states": {
-      "good": 85,
-      "warning": 30,
-      "critical": 15
-    },
-    "format": "{icon}",
-    "format-full": "{icon}",
-    "format-plugged": "󰂄",
-    "format-charging": "󰂄",
-    "format-alt": "{icon}",
-    "format-icons": [
-      "󰁺",
-      "󰁼",
-      "󰁿",
-      "󰂂"
-    ],
-    "tooltip": false
-  },
-  "pulseaudio": {
-    "format": "{icon}",
-    "format-muted": "󰝟",
-    "format-icons": {
-      "default": [
-        "",
-        ""
-      ]
-    },
-    "on-click": "pavucontrol",
-    "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
-    "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-",
-    "tooltip": false
+    "icon-size": 16,
+    "spacing": 8
   },
   "clock": {
     "format": "{:%H:%M}",
-    "tooltip": false,
-    "on-click": "gnome-calendar"
+    "tooltip": false
   }
 }
-# "output": "eDP-1", 
