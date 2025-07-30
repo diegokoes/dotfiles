@@ -3,7 +3,9 @@
     "custom/update",
     "hyprland/workspaces"
   ],
-  "modules-center": ["tray"],
+  "modules-center": [
+    "tray"
+  ],
   "modules-right": [
     "clock"
   ],

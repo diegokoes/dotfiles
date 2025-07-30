@@ -69,3 +69,39 @@ window {
   padding: 4px 12px;
   border-radius: 0;
 }
+
+/* Context menus and tooltips */
+tooltip {
+  background-color: #1e1e1e;
+  color: white;
+  border: 1px solid #444444;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+tooltip label {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+/* Fix for application context menus */
+menu,
+.menu {
+  background-color: #1e1e1e;
+  color: white;
+  border: 1px solid #444444;
+  border-radius: 4px;
+}
+
+menuitem,
+.menuitem {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 4px 8px;
+}
+
+menuitem:hover,
+.menuitem:hover {
+  background-color: #333333;
+  color: white;
+}
