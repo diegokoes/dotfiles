@@ -1,7 +1,6 @@
 {
   "modules-left": [
-    "custom/update",
-    "hyprland/workspaces"
+  "hyprland/workspaces"
   ],
   "modules-center": [
     "tray"
@@ -9,11 +8,6 @@
   "modules-right": [
     "clock"
   ],
-  "custom/update": {
-    "format": "",
-    "tooltip": false,
-    "on-click": "ghostty -e /home/koes/dotfiles/waybar/.config/waybar/scripts/update-system.sh"
-  },
   "hyprland/workspaces": {
     "disable-scroll": true,
     "all-outputs": true,
