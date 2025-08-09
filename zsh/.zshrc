@@ -28,3 +28,19 @@ zstyle :compinstall filename '/home/koes/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
+
+function y() {
+  local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+  yazi "$@" --cwd-file="$tmp"
+  if [ -f "$tmp" ]; then
+    local cwd="$(cat "$tmp")"
+    rm -f "$tmp"
+    if [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+      builtin cd "$cwd"
+    fi
+  fi
+}
