@@ -1,6 +1,6 @@
 confirm-close-surface=false
 resize-overlay=never
 window-decoration=none
-window-height=5
-window-width=10
-theme=Glacier
+theme = dark:catppuccin-frappe,light:catppuccin-latte
+window-theme = system
+gtk-adwaita = true
