@@ -1,20 +1,21 @@
-# Stow (steps)
+# my dotfiles
 
-- **Copy config into the dotfiles repo*
-   ```
-   → mkdir -p hypr/.config
-   → cp -r ~/.config/hypr hypr/.config/
-   ```
-- **Backup original  config**
-   ```
-   → mv ~/.config/hypr ~/.config/hypr.bak
-   ```
+## Desktop / WM
 
-- **Symlink with Stow**
-   ```
-   → cd ~/dotfiles
-   → stow hypr
-   ```
-- - - 
-- ¡Don't add .git or .ssh stuff! it doesn't encrypt /!TO DO LOOK UP HOW TO BACK UP THAT WITH ENCRYPTION !\
-- Stow takes always the ~/ reference, to change it -> -t 'path'
+* [Hyprland + modules](hypr) – compositor (`hyprland.conf`), idle, lock, paper, rules.
+* [Waybar](waybar) – bar, modules, style.
+* [Wofi](wofi) – launcher, theme + background.
+
+## Terminal & Shell
+
+* [Ghostty](ghostty) – terminal settings.
+* [Zsh](zsh) – `.zshrc` core shell config.
+
+## Appearance / Auto Theme & Color
+
+* [darkman](darkman) – light/dark switch.
+* [gammastep](gammastep) – gamma / night color temp.
+
+## Networking / Sharing
+
+* [Samba](samba) – `smb.conf` share defs.
