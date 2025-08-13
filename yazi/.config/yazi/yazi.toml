@@ -1,0 +1,51 @@
+[opener]
+# Open videos with VLC (detached so Yazi returns immediately)
+play-vlc = [
+  { run = 'vlc -- "$@"', orphan = true, desc = "Open with VLC", for = "linux" },
+]
+
+# Edit text with nano (blocking so you return to Yazi when done)
+edit-nano = [
+  { run = 'nano "$@"', block = true, desc = "Edit with nano", for = "unix" },
+]
+
+# Use system default app via xdg-open (detached)
+open-xdg = [
+  { run = 'xdg-open "$@"', orphan = true, desc = "Open (system default)", for = "linux" },
+]
+[open]
+# Replace the default rules entirely so mpv doesn't appear in the menu
+rules = [
+  # Text: nano by default
+  { mime = "text/*",        use = "edit-nano" },
+  { mime = "inode/x-empty", use = "edit-nano" },
+  { name = "*.json",        use = "edit-nano" },
+  { name = "*.md",          use = "edit-nano" },
+
+  # Video: VLC by default; interactive menu also offers system default and media info
+  { mime = "video/*",       use = [ "play-vlc", "open-xdg", "media-info" ] },
+  { name = "*.mp4",         use = [ "play-vlc", "open-xdg", "media-info" ] },
+  { name = "*.mkv",         use = [ "play-vlc", "open-xdg", "media-info" ] },
+  { name = "*.webm",        use = [ "play-vlc", "open-xdg", "media-info" ] },
+
+  # Images: example interactive options (edit to taste)
+  { mime = "image/*",       use = [ "open-xdg", "exif" ] },
+
+  # HTML: open in browser by default; nano as an option in the interactive menu
+  { name = "*.html",        use = [ "open-xdg", "edit-nano" ] },
+
+  # PDFs and other apps: system default
+  { name = "*.pdf",         use = "open-xdg" },
+
+  # Fallback
+  { name = "*",             use = "open-xdg" },
+]
+[[plugin.prepend_fetchers]]
+id   = "git"
+name = "*"
+run  = "git"
+
+[[plugin.prepend_fetchers]]
+id   = "git"
+name = "*/"
+run  = "git"
