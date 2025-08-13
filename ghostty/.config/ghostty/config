@@ -4,3 +4,5 @@ window-decoration=none
 theme = dark:catppuccin-frappe,light:catppuccin-latte
 window-theme = system
 gtk-adwaita = true
+font-family = "JetBrainsMono Nerd Font"
+font-size = 18

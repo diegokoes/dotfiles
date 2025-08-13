@@ -10,12 +10,18 @@ setopt no_check_jobs
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
 eval "$(fnm env --use-on-cd --shell zsh)"
 source "$HOME/.cargo/env"
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - zsh)"
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -113,3 +119,4 @@ function y() {
     fi
   fi
 }
+eval "$(zoxide init zsh)"
