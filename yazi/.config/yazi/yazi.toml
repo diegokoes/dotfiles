@@ -1,45 +1,67 @@
 [opener]
-# Open videos with VLC (detached so Yazi returns immediately)
+
 play-vlc = [
   { run = 'vlc -- "$@"', orphan = true, desc = "Open with VLC", for = "linux" },
 ]
 
-# Edit text with nano (blocking so you return to Yazi when done)
 edit-nano = [
   { run = 'nano "$@"', block = true, desc = "Edit with nano", for = "unix" },
 ]
 
-# Use system default app via xdg-open (detached)
 open-xdg = [
   { run = 'xdg-open "$@"', orphan = true, desc = "Open (system default)", for = "linux" },
 ]
+
+extract = [
+  { run = 'for f in "$@"; do d="${f%.*}"; mkdir -p -- "$d"; 7z x -y -o"$d" -- "$f"; done', block = true, desc = "Extract here", for = "unix" },
+]
 [open]
-# Replace the default rules entirely so mpv doesn't appear in the menu
 rules = [
-  # Text: nano by default
+  # text
   { mime = "text/*",        use = "edit-nano" },
   { mime = "inode/x-empty", use = "edit-nano" },
   { name = "*.json",        use = "edit-nano" },
   { name = "*.md",          use = "edit-nano" },
 
-  # Video: VLC by default; interactive menu also offers system default and media info
+  # video
   { mime = "video/*",       use = [ "play-vlc", "open-xdg", "media-info" ] },
   { name = "*.mp4",         use = [ "play-vlc", "open-xdg", "media-info" ] },
   { name = "*.mkv",         use = [ "play-vlc", "open-xdg", "media-info" ] },
   { name = "*.webm",        use = [ "play-vlc", "open-xdg", "media-info" ] },
 
-  # Images: example interactive options (edit to taste)
+  # images
   { mime = "image/*",       use = [ "open-xdg", "exif" ] },
 
-  # HTML: open in browser by default; nano as an option in the interactive menu
+  # HTML
   { name = "*.html",        use = [ "open-xdg", "edit-nano" ] },
 
-  # PDFs and other apps: system default
+  # PDFs
   { name = "*.pdf",         use = "open-xdg" },
+
+  # Archive formats
+  { mime = "application/zip",          use = [ "extract" ] },
+  { mime = "application/x-7z-compressed", use = [ "extract" ] },
+  { mime = "application/vnd.rar",      use = [ "extract" ] },
+  { mime = "application/x-tar",        use = [ "extract" ] },
+  { mime = "application/gzip",         use = [ "extract" ] },
+  { mime = "application/x-bzip2",      use = [ "extract" ] },
+  { mime = "application/x-xz",         use = [ "extract" ] },
+  # Extension fallbacks (for uncommon MIME types)
+  { name = "*.zip",       use = [ "extract" ] },
+  { name = "*.7z",        use = [ "extract" ] },
+  { name = "*.rar",       use = [ "extract" ] },
+  { name = "*.tar",       use = [ "extract" ] },
+  { name = "*.tar.gz",    use = [ "extract" ] },
+  { name = "*.tgz",       use = [ "extract" ] },
+  { name = "*.tar.bz2",   use = [ "extract" ] },
+  { name = "*.tbz2",      use = [ "extract" ] },
+  { name = "*.tar.xz",    use = [ "extract" ] },
+  { name = "*.txz",       use = [ "extract" ] },
 
   # Fallback
   { name = "*",             use = "open-xdg" },
 ]
+
 [[plugin.prepend_fetchers]]
 id   = "git"
 name = "*"
