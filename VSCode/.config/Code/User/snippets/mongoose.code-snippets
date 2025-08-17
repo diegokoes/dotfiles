@@ -1,0 +1,13 @@
+{
+  "mongoose template": {
+    "prefix": "mongoose",
+    "body": [
+      "import mongoose from 'mongoose';",
+      "const ...Schema = new mongoose.Schema(",
+      "{",
+      "",
+      "});",
+      "export default mongoose.model('',...Schema,'')",
+    ]
+  }
+}
