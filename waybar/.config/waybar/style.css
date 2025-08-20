@@ -22,9 +22,7 @@ workspaces {
   color: white;
   margin: 0;
   padding: 4px 12px;
-
 }
-
 
 #workspaces {
   border-radius: 0;
@@ -82,6 +80,26 @@ workspaces {
 }
 
 /* Right side */
+#battery {
+  background-color: transparent;
+  color: #c0ffc0; /* default color for healthy battery */
+  margin: 0 0 0 0;
+  padding: 4px 8px;
+}
+
+#battery.charging,
+#battery.plugged {
+  color: #a6e3a1; /* green when charging/plugged */
+}
+
+#battery.warning {
+  color: #f9e2af; /* yellow/orange for warning */
+}
+
+#battery.critical {
+  color: #f38ba8; /* red for critical */
+}
+
 #clock {
   background-color: transparent;
   color: white;

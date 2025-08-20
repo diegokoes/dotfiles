@@ -98,7 +98,8 @@
     "editor.minimap.maxColumn",
     "editor.minimap.scale",
     "editor.formatOnType",
-    "emmet.includeLanguages"
+    "emmet.includeLanguages",
+    "github.copilot.chat.codesearch.enabled"
   ],
   "workbench.tree.renderIndentGuides": "always",
   "workbench.activityBar.location": "bottom",
@@ -152,7 +153,6 @@
   "python.analysis.extraPaths": [],
   "python.analysis.typeCheckingMode": "basic",
   "python.defaultInterpreterPath": "/bin/python",
-  "javascript.suggest.paths": false,
   "python.useEnvironmentsExtension": true,
   "ruff.lineLength": 80,
   //== java
@@ -170,6 +170,7 @@
   "maven.executable.path": "/home/koes//maven/bin/mvn",
   "maven.executable.preferMavenWrapper": false,
   //== javascript & typescript
+  "javascript.suggest.paths": false,
   "typescript.suggest.paths": false,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
@@ -260,6 +261,7 @@
     "scminput": false
   },
   "github.copilot.nextEditSuggestions.enabled": true,
+  "github.copilot.chat.codesearch.enabled": true,
   // code runner
   "code-runner.runInTerminal": true,
   // live server
@@ -298,4 +300,43 @@
   "debug.showInStatusBar": "always",
   "debug.enableStatusBarColor": false,
   "zenMode.hideLineNumbers": false,
+  "indentRainbow.colors": [
+    "rgba(255,255,64,0.07)",
+    "rgba(127,255,127,0.07)",
+    "rgba(255,127,255,0.07)",
+    "rgba(79,236,236,0.07)"
+  ],
+  "errorLens.codeLensEnabled": true,
+  "errorLens.codeLensLength": {
+    "min": 0,
+    "max": 200
+  },
+  "errorLens.messageTemplate": "$severity $message",
+  "errorLens.severityText": [
+    "■",
+    "■",
+    "■",
+    "■",
+  ],
+  "errorLens.editorHoverPartsEnabled": {
+    "buttonsEnabled": true
+  },
+  "errorLens.enabledDiagnosticLevels": [
+    "error",
+    "warning",
+    "info",
+    "hint"
+  ],
+  "errorLens.messageBackgroundMode": "message",
+  "errorLens.alignMessage": {
+    "start": 0,
+    "end": 80,
+    "minimumMargin": 4,
+    "padding": [
+      0,
+      0
+    ],
+    "useFixedPosition": true
+  },
+  "errorLens.codeLensTemplate": "$severity $source $message",
 }

@@ -6,6 +6,7 @@
     "tray"
   ],
   "modules-right": [
+    "battery",
     "clock"
   ],
   "hyprland/workspaces": {
@@ -37,5 +38,25 @@
     "format": "{:%H:%M}",
     "tooltip": true,
     "tooltip-format": "{:%d/%m}"
+  },
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-alt": "{time} {icon}",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-icons": [
+      "  ",
+      "  ",
+      "  ",
+      "  ",
+      "  "
+    ],
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "tooltip": true,
+    "tooltip-format": "{capacity}% ({time})",
+    "interval": 10
   }
 }
