@@ -15,7 +15,3 @@
 
 * [darkman](darkman) – light/dark switch.
 * [gammastep](gammastep) – gamma / night color temp.
-
-## Networking / Sharing
-
-* [Samba](samba) – `smb.conf` share defs.
