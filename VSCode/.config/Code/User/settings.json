@@ -51,8 +51,8 @@
   "workbench.startupEditor": "newUntitledFile",
   "workbench.navigationControl.enabled": false,
   "workbench.layoutControl.enabled": false,
-  "workbench.colorTheme": "Monokai Pro Light",
-  "workbench.iconTheme": "Monokai Pro Light Icons",
+  "workbench.colorTheme": "Monokai Pro",
+  "workbench.iconTheme": "Monokai Pro Icons",
   "workbench.preferredLightColorTheme": "Monokai Pro Light",
   "workbench.preferredDarkColorTheme": "Monokai Pro",
   "workbench.commandPalette.experimental.suggestCommands": true,
@@ -339,4 +339,5 @@
     "useFixedPosition": true
   },
   "errorLens.codeLensTemplate": "$severity $source $message",
+  "editor.minimap.enabled": false,
 }
