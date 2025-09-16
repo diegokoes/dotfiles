@@ -1,11 +1,13 @@
 {
   "modules-left": [
-    "hyprland/workspaces"
+    "hyprland/workspaces",
+    "mpris"
   ],
   "modules-center": [
-    "tray"
+    "hyprland/window"
   ],
   "modules-right": [
+    "tray",
     "battery",
     "clock"
   ],
@@ -25,7 +27,11 @@
         3,
         4,
         5,
-        6
+        6,
+        7,
+        8,
+        9,
+        10
       ]
     },
     "cursor": true
@@ -33,6 +39,19 @@
   "tray": {
     "icon-size": 16,
     "spacing": 8
+  },
+  "hyprland/window": {
+    "format": "{title}",
+    "max-length": 80
+  },
+  "mpris": {
+    "player": "ncspot",
+    "format": "{title} — {artist}",
+    "format-paused": "⏸ {title} — {artist}",
+    "format-stopped": "",
+    "tooltip": true,
+    "max-length": 50,
+    "interval": 1
   },
   "clock": {
     "format": "{:%H:%M}",
@@ -49,7 +68,7 @@
       "  ",
       "  ",
       "  ",
-      "  "
+      77
     ],
     "states": {
       "warning": 30,

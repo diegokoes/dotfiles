@@ -24,6 +24,12 @@ workspaces {
   padding: 4px 12px;
 }
 
+#mpris {
+  background-color: transparent;
+  color: rgba(255, 184, 255, 0.986);
+  margin: 0 0 0 8px; /* to the right of workspaces */
+  padding: 4px 8px;
+}
 #workspaces {
   border-radius: 0;
   margin: 0 0 0 20px;
@@ -73,6 +79,14 @@ workspaces {
 
 /* Center tray */
 #tray {
+  background-color: transparent;
+  color: white;
+  margin: 0;
+  padding: 4px 12px;
+}
+
+/* Center window title */
+#window {
   background-color: transparent;
   color: white;
   margin: 0;
