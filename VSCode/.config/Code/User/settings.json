@@ -51,8 +51,8 @@
   "workbench.startupEditor": "newUntitledFile",
   "workbench.navigationControl.enabled": false,
   "workbench.layoutControl.enabled": false,
-  "workbench.colorTheme": "Monokai Pro",
-  "workbench.iconTheme": "Monokai Pro Icons",
+  "workbench.colorTheme": "Monokai Pro Light",
+  "workbench.iconTheme": "Monokai Pro Light Icons",
   "workbench.preferredLightColorTheme": "Monokai Pro Light",
   "workbench.preferredDarkColorTheme": "Monokai Pro",
   "workbench.commandPalette.experimental.suggestCommands": true,
@@ -343,7 +343,4 @@
   "path-intellisense.autoSlashAfterDirectory": true,
   "path-intellisense.extensionOnImport": true,
   "path-intellisense.autoTriggerNextSuggestion": true,
-  "path-intellisense.mappings": {
-    "@": "${workspaceFolder}/src"
-  },
 }
