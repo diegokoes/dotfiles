@@ -291,16 +291,6 @@
     "command": "editor.action.outdentLines"
   },
   {
-    "key": "tab",
-    "command": "editor.action.accessibleViewAcceptInlineCompletion",
-    "when": "accessibleViewIsShown && accessibleViewCurrentProviderId == 'inlineCompletions'"
-  },
-  {
-    "key": "ctrl+shift+7",
-    "command": "-editor.action.accessibleViewAcceptInlineCompletion",
-    "when": "accessibleViewIsShown && accessibleViewCurrentProviderId == 'inlineCompletions'"
-  },
-  {
     "key": "alt+tab",
     "command": "editor.action.inlineSuggest.acceptNextLine"
   },
@@ -410,5 +400,9 @@
   {
     "key": "ctrl+[Semicolon] ctrl+h",
     "command": "editor.showTypeHierarchy"
+  },
+  {
+    "key": "ctrl+p ctrl+i",
+    "command": "editor.action.insertSnippet"
   }
 ]
