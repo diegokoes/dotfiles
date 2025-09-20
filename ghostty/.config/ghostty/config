@@ -1,8 +1,7 @@
 confirm-close-surface=false
 resize-overlay=never
 window-decoration=none
-theme = dark:catppuccin-frappe,light:catppuccin-latte
+theme = dark:Catppuccin Mocha,light:Catppuccin Latte
 window-theme = system
-gtk-adwaita = true
 font-family = "JetBrainsMono Nerd Font"
 font-size = 17
