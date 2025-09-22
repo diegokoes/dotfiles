@@ -48,7 +48,8 @@
   },
   "mpris": {
     "player": "ncspot",
-    "format": "{title} — {artist}",
+    "markup": "pango",
+    "format": "🎵 {title} — {artist}",
     "format-paused": "⏸ {title} — {artist}",
     "format-stopped": "",
     "tooltip": true,
