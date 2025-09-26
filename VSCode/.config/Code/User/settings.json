@@ -51,8 +51,8 @@
   "workbench.startupEditor": "newUntitledFile",
   "workbench.navigationControl.enabled": false,
   "workbench.layoutControl.enabled": false,
-  "workbench.colorTheme": "Monokai Pro Light",
-  "workbench.iconTheme": "Monokai Pro Light Icons",
+  "workbench.colorTheme": "Monokai Pro",
+  "workbench.iconTheme": "Monokai Pro Icons",
   "workbench.preferredLightColorTheme": "Monokai Pro Light",
   "workbench.preferredDarkColorTheme": "Monokai Pro",
   "workbench.commandPalette.experimental.suggestCommands": true,
@@ -321,24 +321,16 @@
   "errorLens.editorHoverPartsEnabled": {
     "buttonsEnabled": true
   },
+  "errorLens.messageEnabled": true,
   "errorLens.enabledDiagnosticLevels": [
     "error",
     "warning",
     "info",
     "hint"
   ],
-  "errorLens.messageBackgroundMode": "message",
-  "errorLens.alignMessage": {
-    "start": 0,
-    "end": 80,
-    "minimumMargin": 4,
-    "padding": [
-      0,
-      0
-    ],
-    "useFixedPosition": true
-  },
+  "errorLens.statusBarIconsEnabled": true,
   "errorLens.codeLensTemplate": "$severity $source $message",
+  "errorLens.messageBackgroundMode": "line",
   "editor.inlineSuggest.edits.allowCodeShifting": "horizontal",
   "path-intellisense.autoSlashAfterDirectory": true,
   "path-intellisense.extensionOnImport": true,

@@ -175,7 +175,7 @@
     "when": "!isAuxiliaryWindowFocusedContext"
   },
   {
-    "key": "shift+3",
+    "key": "ctrl+p ctrl+t",
     "command": "terminal.focus"
   },
   {
@@ -207,7 +207,7 @@
     "command": "workbench.view.extension.project-manager"
   },
   {
-    "key": "ctrl+p ctrl+t",
+    "key": "ctrl+p ctrl+w",
     "command": "themeswitch.toggle"
   },
   {
