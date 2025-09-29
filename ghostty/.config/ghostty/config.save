@@ -1,0 +1,9 @@
+confirm-close-surface=false
+resize-overlay=never
+window-decoration=none
+theme = dark:Catppuccin Mocha,light:Catppuccin Latte
+window-theme = system
+font-family = "JetBrainsMono Nerd Font"
+font-size = 14
+background-opacity = 0.3
+background-blur = tqrue

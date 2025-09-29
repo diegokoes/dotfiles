@@ -84,6 +84,7 @@
     "editor.codeActions.triggerOnFocusChange",
     "window.commandCenter",
     "window.confirmSaveUntitledWorkspace",
+    "window.autoDetectColorScheme",
     "editor.autoIndent",
     "editor.autoIndentOnPaste",
     "editor.codeActionsOnSave",
@@ -99,7 +100,9 @@
     "editor.minimap.scale",
     "editor.formatOnType",
     "emmet.includeLanguages",
-    "github.copilot.chat.codesearch.enabled"
+    "github.copilot.chat.codesearch.enabled",
+    "workbench.preferredDarkColorTheme",
+    "workbench.preferredLightColorTheme"
   ],
   "workbench.tree.renderIndentGuides": "always",
   "workbench.activityBar.location": "bottom",
@@ -336,4 +339,7 @@
   "path-intellisense.extensionOnImport": true,
   "path-intellisense.autoTriggerNextSuggestion": true,
   "discord.removeDetails": true,
+  "workbench.preferredHighContrastColorTheme": "Monokai Pro (Filter Ristretto)",
+  "workbench.preferredHighContrastLightColorTheme": "Monokai Pro Light (Filter Sun)",
+  "window.autoDetectColorScheme": true,
 }

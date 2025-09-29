@@ -59,8 +59,7 @@
   },
   "clock": {
     "format": "{:%H:%M}",
-    "tooltip": true,
-    "tooltip-format": "{:%d/%m}"
+    "tooltip": false,
   },
   "custom/date": {
     "exec": "date +\"%d/%m\"",
