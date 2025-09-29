@@ -27,7 +27,7 @@ workspaces {
 #mpris {
   background-color: transparent;
   color: rgba(255, 184, 255, 0.986);
-  margin: 0 0 0 8px; /* to the right of workspaces */
+  margin: 0 0 0 8px;
   padding: 4px 8px;
 }
 #workspaces {
@@ -94,24 +94,22 @@ workspaces {
 }
 
 /* Right side */
-#battery {
+
+#date,
+#custom-date,
+.custom.date,
+.custom-date {
   background-color: transparent;
-  color: #c0ffc0; /* default color for healthy battery */
+  color: rgba(223, 223, 223, 0.589);
   margin: 0 0 0 0;
   padding: 4px 8px;
 }
 
-#battery.charging,
-#battery.plugged {
-  color: #a6e3a1; /* green when charging/plugged */
-}
-
-#battery.warning {
-  color: #f9e2af; /* yellow/orange for warning */
-}
-
-#battery.critical {
-  color: #f38ba8; /* red for critical */
+#date *,
+#custom-date *,
+.custom.date *,
+.custom-date * {
+  color: rgba(255, 255, 255, 0.85);
 }
 
 #clock {
@@ -136,7 +134,6 @@ tooltip label {
   color: white;
 }
 
-/* Fix for application context menus */
 menu,
 .menu {
   background-color: #1e1e1e;

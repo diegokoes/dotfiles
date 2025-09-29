@@ -9,7 +9,7 @@
   "modules-right": [
     "custom/visualizer",
     "tray",
-    "battery",
+    "custom/date",
     "clock"
   ],
   "hyprland/workspaces": {
@@ -62,24 +62,10 @@
     "tooltip": true,
     "tooltip-format": "{:%d/%m}"
   },
-  "battery": {
-    "format": "{icon} {capacity}%",
-    "format-alt": "{time} {icon}",
-    "format-charging": " {capacity}%",
-    "format-plugged": " {capacity}%",
-    "format-icons": [
-      "  ",
-      "  ",
-      "  ",
-      "  ",
-      77
-    ],
-    "states": {
-      "warning": 30,
-      "critical": 15
-    },
-    "tooltip": true,
-    "tooltip-format": "{capacity}% ({time})",
-    "interval": 10
+  "custom/date": {
+    "exec": "date +\"%d/%m\"",
+    "interval": 60,
+    "format": "{}",
+    "tooltip": false
   }
 }
