@@ -346,4 +346,5 @@
     "workbench.panel.output": false
   },
   "workbench.statusBar.visible": false,
+  "git.confirmSync": false,
 }
