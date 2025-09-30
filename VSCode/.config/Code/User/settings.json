@@ -20,7 +20,6 @@
   "editor.scrollbar.vertical": "hidden",
   "editor.fontVariations": false,
   "editor.minimap.showSlider": "always",
-  "editor.suggest.showStatusBar": true,
   "editor.formatOnSave": true,
   "editor.cursorBlinking": "phase",
   "editor.showFoldingControls": "always",
@@ -29,7 +28,7 @@
   "editor.tabCompletion": "on",
   "editor.bracketPairColorization.enabled": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-  "editor.renderWhitespace": "boundary",
+  "editor.renderWhitespace": "none",
   "editor.rulers": [
     80
   ],
@@ -102,7 +101,8 @@
     "emmet.includeLanguages",
     "github.copilot.chat.codesearch.enabled",
     "workbench.preferredDarkColorTheme",
-    "workbench.preferredLightColorTheme"
+    "workbench.preferredLightColorTheme",
+    "editor.suggest.showStatusBar"
   ],
   "workbench.tree.renderIndentGuides": "always",
   "workbench.activityBar.location": "bottom",
@@ -300,8 +300,7 @@
   "settingsSync.ignoredSettings": [],
   "html.format.wrapLineLength": 80,
   "indentRainbow.colorOnWhiteSpaceOnly": false,
-  "debug.showInStatusBar": "always",
-  "debug.enableStatusBarColor": false,
+  "debug.showInStatusBar": "never",
   "zenMode.hideLineNumbers": false,
   "indentRainbow.colors": [
     "rgba(255,255,64,0.07)",
@@ -342,4 +341,9 @@
   "workbench.preferredHighContrastColorTheme": "Monokai Pro (Filter Ristretto)",
   "workbench.preferredHighContrastLightColorTheme": "Monokai Pro Light (Filter Sun)",
   "window.autoDetectColorScheme": true,
+  "debug.enableStatusBarColor": false,
+  "workbench.view.showQuietly": {
+    "workbench.panel.output": false
+  },
+  "workbench.statusBar.visible": false,
 }
