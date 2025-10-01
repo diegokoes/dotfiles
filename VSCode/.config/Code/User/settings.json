@@ -360,5 +360,4 @@
   "[github-actions-workflow]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
-  "workbench.statusBar.visible": false,
 }
