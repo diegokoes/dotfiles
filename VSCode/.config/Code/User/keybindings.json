@@ -242,10 +242,6 @@
     "when": "inEditorsPicker && inQuickOpen"
   },
   {
-    "key": "ctrl+p ctrl+f",
-    "command": "workbench.action.chat.attachFile"
-  },
-  {
     "key": "ctrl+p ctrl+a",
     "command": "workbench.action.toggleActivityBarVisibility"
   },
@@ -432,5 +428,9 @@
     "key": "ctrl+i",
     "command": "-search.action.searchWithAI",
     "when": "hasAIResultProviderKey && searchViewletFocus"
+  },
+  {
+    "key": "ctrl+p ctrl+f",
+    "command": "peacock.changeColorToFavorite"
   }
 ]

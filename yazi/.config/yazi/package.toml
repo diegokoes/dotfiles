@@ -1,12 +1,14 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "e95c7b3"
+rev = "d1c8baa"
 hash = "63b6c222bf2103b3023389dde5e2ecfe"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:mount"
-rev = "e95c7b3"
-hash = "e1de3054c0d1a2d8dc6f007eadc0fa31"
+rev = "d1c8baa"
+hash = "435a2af56ecfb3d05755fd5e24977d8b"
 
-[flavor]
-deps = []
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-frappe"
+rev = "2d73b79"
+hash = "ca94f5dc2b87919439b5be2a62cf4871"
