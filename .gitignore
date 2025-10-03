@@ -1,3 +1,4 @@
 # VSCode state databases
-VSCode/.config/Code/User/profiles/*/globalStorage/state.vscdb
-VSCode/.config/Code/User/profiles/*/globalStorage/state.vscdb.backup
+VSCode/.config/Code/User/profiles/*
+VSCode/.config/Code/User/profiles/*
+ncspot/.config/ncspot/userstate.cbor

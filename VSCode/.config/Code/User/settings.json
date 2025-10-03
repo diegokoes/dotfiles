@@ -253,7 +253,8 @@
   "thunder-client.previewFeatures": true,
   "thunder-client.defaultURL": "http://localhost:8080/",
   "[markdown]": {
-    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+    "diffEditor.ignoreTrimWhitespace": false
   },
   // git
   "git.autofetch": true,
@@ -364,5 +365,4 @@
   "[github-actions-workflow]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
-  "workbench.statusBar.visible": false,
 }

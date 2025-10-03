@@ -1,23 +1,36 @@
-# my dotfiles
+# dotfiles
 
-## Desktop / WM
+Concise list of what's here. One dir = one app/config.
 
-* [Hyprland + modules](hypr) – compositor (`hyprland.conf`), idle, lock, paper, rules.
-* [Waybar](waybar) – bar, modules, style.
-* [Wofi](wofi) – launcher, theme + background.
+## Desktop / Environment
+
+* [hypr](hypr) – Hyprland compositor + rules, idle, lock, wallpaper.
+* [waybar](waybar) – bar modules + style.
+* [wofi](wofi) – launcher + theme.
+* [mako](mako) – notifications.
+* [darkman](darkman) – auto light/dark.
+* [gammastep](gammastep) – night color temp.
 
 ## Terminal & Shell
 
-* [Ghostty](ghostty) – terminal settings.
-* [Zsh](zsh) – `.zshrc` core shell config.
-* [LSD](lsd) – `lsd` command, replacement for ls, config for style and colors.
+* [ghostty](ghostty) – terminal profile.
+* [zsh](zsh) – shell (`.zshrc` and extras).
+* [lsd](lsd) – modern ls config.
+* [yazi](yazi) – TUI file manager theme/keys.
+* [fastfetch](fastfetch) – system info banner.
+* [btop](btop) – resource monitor theme.
+* [tealdeer](tealdeer) – tldr client config.
 
+## Editors
 
-## Appearance / Auto Theme & Color
+* [nvim](nvim) – Neovim lua config.
+* [VSCode](VSCode) – settings/snippets.
 
-* [darkman](darkman) – light/dark switch.
-* [gammastep](gammastep) – gamma / night color temp.
+## Music / Media
 
-## Music
-* [music-discord-rpc](music-discord-rpc) – Discord rich presence for any player or app with MPRIS support (configured to only track ncspot).
+* [ncspot](ncspot) – TUI Spotify client.
+* [music-discord-rpc](music-discord-rpc) – MPRIS rich presence
 
+- - -
+
+`To copy my configs. clone, then symlink as needed into $HOME with stow.`
