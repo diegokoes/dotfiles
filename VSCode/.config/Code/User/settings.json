@@ -102,7 +102,8 @@
     "github.copilot.chat.codesearch.enabled",
     "workbench.preferredDarkColorTheme",
     "workbench.preferredLightColorTheme",
-    "editor.suggest.showStatusBar"
+    "editor.suggest.showStatusBar",
+    "chat.agent.maxRequests"
   ],
   "workbench.tree.renderIndentGuides": "always",
   "workbench.activityBar.location": "bottom",
@@ -365,4 +366,6 @@
   "[github-actions-workflow]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
+  "errorLens.enabled": false,
+  "chat.agent.maxRequests": 50,
 }

@@ -1,7 +1,7 @@
 confirm-close-surface=false
 resize-overlay=never
 window-decoration=none
-theme = dark:Catppuccin Mocha,light:Catppuccin Latte
+theme = dark:Builtin Solarized Dark,light:Builtin Solarized Light
 window-theme = system
 font-family = "JetBrainsMono Nerd Font"
 font-size = 13
