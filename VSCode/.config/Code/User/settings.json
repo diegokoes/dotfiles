@@ -49,7 +49,6 @@
   "workbench.editor.enablePreview": false,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.navigationControl.enabled": false,
-  "workbench.layoutControl.enabled": false,
   "workbench.colorTheme": "Monokai Pro Light",
   "workbench.iconTheme": "Monokai Pro Light Icons",
   "workbench.preferredLightColorTheme": "Monokai Pro Light",
@@ -264,7 +263,7 @@
   "git.enableSmartCommit": true,
   // copilot
   "github.copilot.enable": {
-    "*": true,
+    "*": false,
     "plaintext": true,
     "markdown": false,
     "scminput": false
@@ -302,7 +301,6 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "zenMode.restore": false,
   "search.quickOpen.includeHistory": false,
-  "zenMode.fullScreen": false,
   "settingsSync.ignoredSettings": [],
   "html.format.wrapLineLength": 80,
   "indentRainbow.colorOnWhiteSpaceOnly": false,
@@ -368,4 +366,6 @@
   },
   "errorLens.enabled": false,
   "chat.agent.maxRequests": 50,
+  "workbench.layoutControl.enabled": false,
+  "window.customTitleBarVisibility": "windowed",
 }
