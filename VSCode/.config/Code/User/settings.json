@@ -115,8 +115,6 @@
   "workbench.editor.tabSizingFixedMaxWidth": 180,
   "workbench.editor.tabSizing": "shrink",
   "workbench.editor.wrapTabs": true,
-  // files
-  "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 1500,
   "files.trimTrailingWhitespace": true,
   // window
@@ -263,7 +261,7 @@
   "git.enableSmartCommit": true,
   // copilot
   "github.copilot.enable": {
-    "*": false,
+    "*": true,
     "plaintext": true,
     "markdown": false,
     "scminput": false

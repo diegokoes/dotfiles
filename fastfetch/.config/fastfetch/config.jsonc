@@ -41,9 +41,6 @@
       "left": 12, // Left padding
       "right": 0 // Right padding
     },
-    "color": { // Override logo colors
-      "1": "blue",
-      "2": "black"
-    }
+   
   }
 }
