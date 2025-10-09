@@ -31,6 +31,10 @@ Concise list of what's here. One dir = one app/config.
 * [ncspot](ncspot/.config/ncspot) – TUI Spotify client (config + userstate).
 * [music-discord-rpc](music-discord-rpc/.config/music-discord-rpc) – MPRIS rich presence
 
+## Configs
+
+* [configs](non-stowed-configs) – Non stowed various configs
+
 - - -
 
 `To copy my configs. clone, then symlink as needed into $HOME with stow.`

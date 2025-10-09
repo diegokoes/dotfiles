@@ -33,14 +33,11 @@
   ],
   "logo": {
     "type": "auto", // Logo type: auto, builtin, small, file, etc.
-    "source": "arch", // Built-in logo name or file path
+    "source": "scientific", // Built-in logo name or file path
     "width": 65, // Width in characters
     "height": 35, // Height in characters
-    "padding": {
-      "top": 4, // Top padding
-      "left": 12, // Left padding
-      "right": 0 // Right padding
-    },
-   
+    "padding":{
+	"left":15,
+	},
   }
 }
