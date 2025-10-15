@@ -1,7 +1,7 @@
 confirm-close-surface=false
 resize-overlay=never
 window-decoration=none
-theme = Everforest Dark   Hard
+theme = Everforest Dark Hard
 window-theme = system
 font-family = "FiraCode Nerd Font Mono"
 font-size = 15
