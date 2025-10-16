@@ -1,7 +1,7 @@
 {
   "modules-left": [
-    "hyprland/workspaces",
-    "mpris"
+    "hyprland/windowcount",
+    "hyprland/workspaces"
   ],
   "modules-center": [
     "hyprland/window"
@@ -9,6 +9,8 @@
   "modules-right": [
     "custom/visualizer",
     "tray",
+    "backlight",
+    "mpris",
     "custom/date",
     "clock"
   ],
@@ -41,11 +43,24 @@
     "icon-size": 16,
     "spacing": 8
   },
+  "hyprland/windowcount": {
+    "format": "{}",
+    "separate-outputs": true
+  },
   "hyprland/window": {
     "format": "{title}",
-    "max-length": 80,
+    "max-length": 50,
     "tooltip": false,
-    "separate-outputs": true
+    "separate-outputs": true,
+    "icon": true,
+    "icon-size": 16,
+    "rewrite": {
+      "(.*) - (Firefox Developer Edition|Mozilla Firefox)": "$1",
+      "(.*) — (Firefox Developer Edition|Mozilla Firefox)": "$1",
+      "(.*) - (Visual Studio Code)": "$1",
+      "(.*)(Ghostty)": "$1",
+      "(.*) - (Discord)": "$1"
+    }
   },
   "mpris": {
     "player": "ncspot",
@@ -66,5 +81,47 @@
     "interval": 60,
     "format": "{}",
     "tooltip": false
+  },
+  "cava": {
+    "cava_config": "/home/koes/.config/cava/cava.conf",
+    "method": "pulse",
+    "source": "auto",
+    "input_delay": 4,
+    "framerate": 30,
+    "autosens": 1,
+    "sensitivity": 100,
+    "bars": 14,
+    "hide_on_silence": false,
+    "format-icons": [
+      "▁",
+      "▂",
+      "▃",
+      "▄",
+      "▅",
+      "▆",
+      "▇",
+      "█"
+    ],
+    "actions": {
+      "on-click-right": "mode"
+    }
+  },
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{icon} {percent}%",
+    "format-icons": [
+      "🌑",
+      "🌒",
+      "🌓",
+      "🌔",
+      "🌕"
+    ],
+    "max-length": 8,
+    "interval": 2,
+    "tooltip": false,
+    "on-click": "brightnessctl set +10%",
+    "on-click-right": "brightnessctl set 10%-",
+    "on-scroll-up": "brightnessctl set +5%",
+    "on-scroll-down": "brightnessctl set 5%-"
   }
 }
