@@ -5,6 +5,7 @@
   background-color: transparent;
   border-radius: 0;
   min-height: 0;
+  color: #dee9f4;
 }
 
 window {
@@ -12,126 +13,112 @@ window {
 }
 
 #waybar {
-  background: #000000;
+  background: #000001;
   border-radius: 0;
-}
-
-/* Left side modules */
-workspaces {
-  background-color: transparent;
-  color: white;
-  margin: 0;
-  padding: 4px 12px;
 }
 
 #mpris {
-  background-color: transparent;
-  color: rgba(255, 184, 255, 0.986);
-  margin: 0 0 0 8px;
-  padding: 4px 8px;
+  color: #dee9f4;
+  margin-left: 5px;
 }
+#mpris.playing {
+  color: #fa7906;
+}
+#mpris.paused {
+  color: #0374ac;
+}
+#mpris.stopped {
+  color: #dee9f4;
+  opacity: 0.9;
+}
+
 #workspaces {
-  border-radius: 0;
-  margin: 0 0 0 20px;
+  background-color: transparent;
+  margin: 0 0 0 180px;
   padding: 4px 8px;
 }
-
 #workspaces button {
-  color: white;
   border: none;
-  padding: 2px 6px;
-  margin: 0 2px;
-  background-color: transparent;
-  border-radius: 3px;
-  min-width: 16px;
-  font-size: 12px;
-}
-
-/* Workspaces with windows - should come before empty */
-#workspaces button.persistent {
-  color: #87ceeb;
-  background-color: rgba(135, 206, 235, 0.3);
-  border: 1px solid rgba(135, 206, 235, 0.5);
-}
-
-/* Empty workspaces */
-#workspaces button.empty {
-  color: white;
-  background-color: transparent;
-}
-
-/* Active workspace - higher priority than empty/persistent */
-#workspaces button.active {
-  color: #000000;
-  background-color: white;
-  border: none;
-  padding: 2px 6px;
-  margin: 0 1px;
-  min-width: 16px;
-  border-radius: 3px;
-}
-
-/* Urgent workspaces - highest priority */
-#workspaces button.urgent {
-  color: #ff6b6b;
-  background-color: transparent;
-}
-
-/* Center tray */
-#tray {
-  background-color: transparent;
-  color: white;
-  margin: 0;
-  padding: 4px 12px;
-}
-
-/* Center window title */
-#window {
-  background-color: transparent;
-  color: white;
-  margin: 0;
-  padding: 4px 12px;
-}
-
-/* Right side */
-
-#date,
-#custom-date,
-.custom.date,
-.custom-date {
-  background-color: transparent;
-  color: rgba(223, 223, 223, 0.589);
-  margin: 0 0 0 0;
-  padding: 4px 8px;
-}
-
-#date *,
-#custom-date *,
-.custom.date *,
-.custom-date * {
-  color: rgba(255, 255, 255, 0.85);
-}
-
-#clock {
-  background-color: transparent;
-  color: white;
-  margin: 0 10px 0 0;
-  padding: 4px 12px;
+  background: transparent;
+  color: #dee9f4;
+  min-width: 20px;
+  min-height: 20px;
+  padding: 0;
+  margin: 0 4px;
   border-radius: 0;
+  font-size: 14px;
+}
+#workspaces button label {
+  padding: 0;
+  color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+
+  background-image: url("assets/circle-empty.svg");
+  min-width: 18px;
+  min-height: 18px;
 }
 
-/* Context menus and tooltips */
-tooltip {
+#workspaces button.active {
+  color: #fa7906;
+}
+#workspaces button.urgent {
+  color: #0374ac;
+}
+
+#workspaces button:nth-child(3),
+#workspaces button:nth-child(6) {
+  border-right: 2px solid rgba(255, 255, 255, 0.25);
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+#workspaces button:not(.empty):not(.active):not(.urgent) label {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.85);
+  padding-bottom: 1px;
+}
+
+#workspaces button.empty label {
+  background-image: url("assets/circle-empty.svg");
+}
+
+#workspaces button.active label {
+  background-image: url("assets/circle-filled.svg");
+}
+
+#window {
+  color: #dee9f4;
+  padding: 4px 12px;
+  margin-left: 100px;
+}
+
+#tray,
+#backlight,
+#custom-date,
+#clock {
+  background: transparent;
+  padding: 4px 10px;
+}
+#backlight {
+  color: #fa7906;
+}
+#custom-date {
+  min-width: 48px;
+  color: #dee9f4;
+}
+#clock {
+  min-width: 48px;
+  color: #dee9f4;
+}
+
+tooltip,
+tooltip label {
   background-color: #1e1e1e;
   color: white;
   border: 1px solid #444444;
   border-radius: 4px;
   padding: 4px 8px;
-}
-
-tooltip label {
-  background-color: #1e1e1e;
-  color: white;
 }
 
 menu,
