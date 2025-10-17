@@ -26,7 +26,7 @@ window {
 
 #mpris {
   color: #dee9f4;
-  margin-left: 2px;
+  margin-left: 20px;
 
   min-width: 240px;
 }
@@ -83,17 +83,19 @@ window {
   margin-right: 10px;
 }
 
-#workspaces button:not(.empty):not(.active):not(.urgent) label {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.85);
-  padding-bottom: 1px;
-}
-
 #workspaces button.empty label {
   background-image: url("assets/circle-empty.svg");
 }
 
+#workspaces button:not(.empty) label {
+  background-image: url("assets/circle-filled-white.svg");
+
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
 #workspaces button.active label {
-  background-image: url("assets/circle-filled.svg");
+  background-image: url("assets/circle-filled-active-orange.svg");
 }
 
 /* ==========================
@@ -104,7 +106,7 @@ window {
 #window {
   color: #dee9f4;
   padding: 4px 12px;
-  margin-left: 90px;
+  margin-left: 11px;
 }
 
 /* ==========================
