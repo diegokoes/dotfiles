@@ -34,7 +34,7 @@ window {
 
 #workspaces {
   background-color: transparent;
-  margin: 0 0 0 180px;
+  margin: 0 0 0 530px;
   padding: 4px 8px;
 }
 #workspaces button {
@@ -90,7 +90,7 @@ window {
 #window {
   color: #dee9f4;
   padding: 4px 12px;
-  margin-left: 100px;
+  margin-left: 90px;
 }
 
 #tray,
