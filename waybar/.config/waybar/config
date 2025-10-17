@@ -9,7 +9,6 @@
   "modules-right": [
     "tray",
     "backlight",
-    "custom/date",
     "clock"
   ],
   "hyprland/workspaces": {
@@ -67,18 +66,32 @@
     "format-paused": "⏸ {title} — {artist}",
     "format-stopped": "",
     "tooltip": false,
-    "max-length": 50,
+    "max-length": 30,
     "interval": 1
   },
   "clock": {
-    "format": "{:%H:%M}",
-    "tooltip": false
-  },
-  "custom/date": {
-    "exec": "date +\"%d/%m\"",
-    "interval": 60,
-    "format": "{}",
-    "tooltip": false
+    "format": "{:%A, %B %d     %R}",
+    "format-alt": "{:%H:%M}",
+    "max-length": 48,
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "year",
+      "mode-mon-col": 3,
+      "weeks-pos": "right",
+      "on-scroll": 1,
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "days": "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+      }
+    },
+    "actions": {
+      "on-click-right": "mode",
+      "on-scroll-up": "tz_up",
+      "on-scroll-down": "tz_down"
+    }
   },
   "cava": {
     "cava_config": "/home/koes/.config/cava/cava.conf",

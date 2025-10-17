@@ -14,12 +14,19 @@ window {
 
 #waybar {
   background: #000001;
-  border-radius: 0;
+  border-radius: 2;
 }
 
 #mpris {
   color: #dee9f4;
-  margin-left: 5px;
+  margin-left: 2px;
+
+  /* Reserve horizontal space so mpris doesn't rely on other modules' sizing.
+     Adjust min-width (240px) to taste for how much space you want to dedicate. */
+  min-width: 240px;
+
+  /* text truncation handled by module config ("max-length") — Waybar CSS does not support
+     white-space/overflow/text-overflow properties in its subset. */
 }
 #mpris.playing {
   color: #fa7906;
@@ -34,7 +41,7 @@ window {
 
 #workspaces {
   background-color: transparent;
-  margin: 0 0 0 530px;
+  margin: 0 0 0 565px;
   padding: 4px 8px;
 }
 #workspaces button {
@@ -110,6 +117,7 @@ window {
 #clock {
   min-width: 48px;
   color: #dee9f4;
+  margin-right: 11px;
 }
 
 tooltip,
