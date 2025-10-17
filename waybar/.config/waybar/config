@@ -1,9 +1,10 @@
 {
   "modules-left": [
     "mpris",
-    "hyprland/workspaces"
+    "mpris-spacer"
   ],
   "modules-center": [
+    "hyprland/workspaces",
     "hyprland/window"
   ],
   "modules-right": [
@@ -66,7 +67,7 @@
     "format-paused": "⏸ {title} — {artist}",
     "format-stopped": "",
     "tooltip": false,
-    "max-length": 30,
+    "max-length": 50,
     "interval": 1
   },
   "clock": {

@@ -1,3 +1,10 @@
+/* ==========================
+   LEFT MODULES
+   - mpris
+   - custom/mpris-spacer
+   - hyprland/workspaces
+   ========================== */
+
 * {
   font-family: "JetBrainsMono Nerd Font";
   font-size: 13px;
@@ -21,12 +28,7 @@ window {
   color: #dee9f4;
   margin-left: 2px;
 
-  /* Reserve horizontal space so mpris doesn't rely on other modules' sizing.
-     Adjust min-width (240px) to taste for how much space you want to dedicate. */
   min-width: 240px;
-
-  /* text truncation handled by module config ("max-length") — Waybar CSS does not support
-     white-space/overflow/text-overflow properties in its subset. */
 }
 #mpris.playing {
   color: #fa7906;
@@ -41,7 +43,7 @@ window {
 
 #workspaces {
   background-color: transparent;
-  margin: 0 0 0 565px;
+  margin: 0 0 0 0px;
   padding: 4px 8px;
 }
 #workspaces button {
@@ -94,11 +96,23 @@ window {
   background-image: url("assets/circle-filled.svg");
 }
 
+/* ==========================
+   CENTER MODULES
+   - hyprland/window
+   ========================== */
+
 #window {
   color: #dee9f4;
   padding: 4px 12px;
   margin-left: 90px;
 }
+
+/* ==========================
+   RIGHT MODULES
+   - tray
+   - backlight
+   - clock
+   ========================== */
 
 #tray,
 #backlight,
