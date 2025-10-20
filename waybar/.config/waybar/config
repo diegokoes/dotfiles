@@ -17,9 +17,9 @@
     "warp-on-scroll": false,
     "format": "{icon}",
     "format-icons": {
-      "active": "●",
-      "default": "○",
-      "urgent": "●"
+      "active": "",
+      "default": "",
+      "urgent": ""
     },
     "persistent-workspaces": {
       "*": [
