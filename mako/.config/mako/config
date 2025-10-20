@@ -1,11 +1,65 @@
-max-visible=10
-layer=top
-font=Sarasa UI SC 10
-background-color=#4c566add
-text-color=#d8dee9
-border-color=#434c5e
-border-radius=7
+max-visible=8
+layer=overlay
+font=Sarasa UI SC 11
+background-color=#2e3440dd
+text-color=#e5e9f0
+border-color=#434c5e66
+border-size=2
+border-radius=10
 max-icon-size=48
-default-timeout=10000
+default-timeout=8000
 anchor=top-right
-margin=20
+margin=12
+outer-margin=10
+padding=12
+width=360
+height=140
+icons=1
+icon-location=left
+icon-border-radius=8
+markup=1
+actions=1
+ignore-timeout=0
+progress-color=over #88c0ffcc
+text-alignment=left
+format=<b>%s</b>\n%b
+on-button-left=invoke-default-action
+on-button-right=dismiss
+
+[grouped]
+format=(%g) <b>%s</b>\n%b
+invisible=1
+
+[group-index=0]
+invisible=0
+
+[hidden]
+format=<b>%h</b> hidden • %t total
+background-color=#3b4252cc
+text-color=#eceff4
+border-color=#4c566a
+border-radius=10
+padding=10
+width=320
+
+[urgency=critical]
+background-color=#3b0000cc
+border-color=#ff6b6b
+text-color=#fff5f5
+progress-color=over #ff6b6bcc
+border-size=2
+
+[urgency=normal]
+background-color=#2e3440cc
+border-color=#88c0ff66
+text-color=#e5e9f0
+
+[urgency=low]
+background-color=#2f354066
+border-color=#4c566a44
+text-color=#d8dee9aa
+
+[actionable]
+border-color=#A3BE8C
+background-color=#243033cc
+border-size=2
