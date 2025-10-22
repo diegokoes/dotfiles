@@ -1,16 +1,16 @@
 {
   "layer": "top",
   "exclusive": false,
-  "margin-top": 7,
+  "margin-top": 0,
   "modules-left": [
-    "tray",
+    "hyprland/window",
     "mpris"
   ],
   "modules-center": [
     "hyprland/workspaces"
   ],
   "modules-right": [
-    "hyprland/window",
+    "tray",
     "clock"
   ],
   "hyprland/workspaces": {
@@ -46,7 +46,7 @@
     "separate-outputs": true
   },
   "hyprland/window": {
-    "format": "",
+    "format": "{title}",
     "max-length": 50,
     "tooltip": false,
     "separate-outputs": true,
@@ -57,18 +57,20 @@
       "(.*) — (Firefox Developer Edition|Mozilla Firefox)": "$1",
       "(.*) - (Visual Studio Code)": "$1",
       "(.*)(Ghostty)": "$1",
-      "(.*) - (Discord)": "$1"
+      "(.*) - (Discord)": "$1",
+      "(.*) - (YouTube — Firefox Developer Edition)": "$1"
     }
   },
   "mpris": {
+    "format": "{player_icon} {title} - {album} - {artist}",
+    "format-paused": "{status_icon}",
     "player": "ncspot",
-    "markup": "pango",
-    "format": "🎵",
-    "format-paused": "⏸",
-    "format-stopped": "",
-    "tooltip": true,
-    "max-length": 20,
-    "interval": 1
+    "player-icons": {
+      "default": "▶"
+    },
+    "status-icons": {
+      "paused": "PAUSED"
+    }
   },
   "clock": {
     "format": "{:%A, %B %d     %R}",

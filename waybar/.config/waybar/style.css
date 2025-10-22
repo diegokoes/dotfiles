@@ -1,9 +1,8 @@
 /* ==========================
-   LEFT MODULES
-   - mpris
-   - custom/mpris-spacer
-   - hyprland/workspaces
-   ========================== */
+  LEFT MODULES (per config)
+  - tray
+  - mpris
+  ========================== */
 
 * {
   font-family: "JetBrainsMono Nerd Font";
@@ -46,6 +45,18 @@ window {
   margin: 0;
 }
 
+#tray {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 4px 10px;
+  margin: 0 6px 4px 0;
+  border-radius: 10px;
+}
+
+/* ==========================
+   CENTER MODULES (per config)
+   - hyprland/workspaces
+   ========================== */
+
 #workspaces {
   background: rgba(0, 0, 0, 0.7);
   margin: 0 0px 4px 6px;
@@ -68,7 +79,7 @@ window {
   color: transparent;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 18px 18px;
+  background-size: 16px 16px;
 
   background-image: url("assets/circle-empty.svg");
   min-width: 16px;
@@ -105,30 +116,22 @@ window {
 }
 
 /* ==========================
-   CENTER MODULES
+   RIGHT MODULES (per config)
    - hyprland/window
+   - clock
    ========================== */
 
 #window {
   color: #dee9f4;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 4px 10px;
-  margin: 0 6px 4px 6px;
-  border-radius: 10px;
+  background: transparent;
 }
-
-/* ==========================
-   RIGHT MODULES
-   - tray
-   - clock
-   ========================== */
-
-#tray {
+#window:not(.empty) {
   background: rgba(0, 0, 0, 0.7);
   padding: 4px 10px;
   margin: 0 6px 4px 20px;
   border-radius: 10px;
 }
+
 #custom-date,
 #clock {
   background: rgba(0, 0, 0, 0.7);
