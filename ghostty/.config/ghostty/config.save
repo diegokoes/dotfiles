@@ -1,0 +1,12 @@
+confirm-close-surface=false
+resize-overlay=never
+window-decoration=none
+theme = Everforest Dark Hard
+window-theme = system
+font-family = "FiraCode Nerd Font Mono"
+font-size = 15e
+window-padding-x = 0
+window-padding-y = 0
+window-padding-color = extend
+background-opacity = 0.2
+background-blur = true
