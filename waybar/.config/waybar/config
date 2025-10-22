@@ -1,14 +1,16 @@
 {
+  "layer": "top",
+  "exclusive": false,
+  "margin-top": 7,
   "modules-left": [
-    "hyprland/window",
+    "tray",
     "mpris"
   ],
   "modules-center": [
     "hyprland/workspaces"
   ],
   "modules-right": [
-    "tray",
-    "backlight",
+    "hyprland/window",
     "clock"
   ],
   "hyprland/workspaces": {
@@ -33,8 +35,7 @@
         8,
         9
       ]
-    },
-    "cursor": true
+    }
   },
   "tray": {
     "icon-size": 16,
@@ -45,7 +46,7 @@
     "separate-outputs": true
   },
   "hyprland/window": {
-    "format": "{title}",
+    "format": "",
     "max-length": 50,
     "tooltip": false,
     "separate-outputs": true,
@@ -62,10 +63,10 @@
   "mpris": {
     "player": "ncspot",
     "markup": "pango",
-    "format": "🎵 {title} — {artist}",
-    "format-paused": "⏸ {title} — {artist}",
+    "format": "🎵",
+    "format-paused": "⏸",
     "format-stopped": "",
-    "tooltip": false,
+    "tooltip": true,
     "max-length": 20,
     "interval": 1
   },
@@ -116,21 +117,5 @@
     "actions": {
       "on-click-right": "mode"
     }
-  },
-  "backlight": {
-    "device": "intel_backlight",
-    "format": "{icon}",
-    "format-icons": [
-      "🌑",
-      "🌒",
-      "🌓",
-      "🌔",
-      "🌕"
-    ],
-    "tooltip": false,
-    "on-click": "brightnessctl set +10%",
-    "on-click-right": "brightnessctl set 10%-",
-    "on-scroll-up": "brightnessctl set +5%",
-    "on-scroll-down": "brightnessctl set 5%-"
   }
 }

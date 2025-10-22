@@ -432,5 +432,9 @@
   {
     "key": "ctrl+p ctrl+f",
     "command": "peacock.changeColorToFavorite"
+  },
+  {
+    "key": "ctrl+shift+1",
+    "command": "workbench.action.maximizeAuxiliaryBar"
   }
 ]

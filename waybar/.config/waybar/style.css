@@ -7,7 +7,7 @@
 
 * {
   font-family: "JetBrainsMono Nerd Font";
-  font-size: 13px;
+  font-size: 12px;
   font-weight: bold;
   background-color: transparent;
   border-radius: 0;
@@ -20,53 +20,59 @@ window {
 }
 
 #waybar {
-  background: #000001;
-  border-radius: 2;
+  background: transparent;
+  border-radius: 0;
 }
 
 #mpris {
   color: #dee9f4;
-  margin-left: 20px;
-
-  min-width: 240px;
+  background: transparent;
+  padding: 0;
+  margin-left: 18px; /*!TODO*/
 }
-#mpris.playing {
-  color: #fa7906;
-}
+#mpris.playing,
 #mpris.paused {
-  color: #0374ac;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 4px 10px;
+  margin: 0 6px 4px 6px;
+  border-radius: 10px;
 }
+
 #mpris.stopped {
   color: #dee9f4;
-  opacity: 0.9;
+  opacity: 0.7;
+  background: transparent;
+  padding: 0;
+  margin: 0;
 }
 
 #workspaces {
-  background-color: transparent;
-  margin: 0 0 0 0px;
+  background: rgba(0, 0, 0, 0.7);
+  margin: 0 0px 4px 6px;
   padding: 4px 8px;
+  border-radius: 10px;
 }
 #workspaces button {
   border: none;
   background: transparent;
   color: #dee9f4;
   min-width: 20px;
-  min-height: 20px;
+  min-height: 18px;
   padding: 0;
-  margin: 0 4px;
+  margin: 0 3.5px;
   border-radius: 0;
-  font-size: 14px;
+  font-size: 13px;
 }
 #workspaces button label {
   padding: 0;
   color: transparent;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 14px 14px;
+  background-size: 18px 18px;
 
   background-image: url("assets/circle-empty.svg");
-  min-width: 18px;
-  min-height: 18px;
+  min-width: 16px;
+  min-height: 16px;
 }
 
 #workspaces button.active {
@@ -105,27 +111,32 @@ window {
 
 #window {
   color: #dee9f4;
-  padding: 4px 12px;
-  margin-left: 11px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 4px 10px;
+  margin: 0 6px 4px 6px;
+  border-radius: 10px;
 }
 
 /* ==========================
    RIGHT MODULES
    - tray
-   - backlight
    - clock
    ========================== */
 
-#tray,
-#backlight,
+#tray {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 4px 10px;
+  margin: 0 6px 4px 20px;
+  border-radius: 10px;
+}
 #custom-date,
 #clock {
-  background: transparent;
+  background: rgba(0, 0, 0, 0.7);
   padding: 4px 10px;
+  margin: 0 6px 4px 6px;
+  border-radius: 10px;
 }
-#backlight {
-  color: #fa7906;
-}
+
 #custom-date {
   min-width: 48px;
   color: #dee9f4;
@@ -133,7 +144,7 @@ window {
 #clock {
   min-width: 48px;
   color: #dee9f4;
-  margin-right: 11px;
+  margin-right: 20px;
 }
 
 tooltip,
