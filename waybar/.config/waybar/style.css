@@ -144,6 +144,19 @@ window#waybar.empty #window {
   color: #dee9f4;
 }
 
+#custom-dnd {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0 12px;
+  margin: 0 0 4px 0;
+  border-radius: 0;
+}
+#custom-dnd.active {
+  color: #fa7906;
+}
+#custom-dnd.inactive {
+  color: rgba(222, 233, 244, 0.65);
+}
+
 tooltip,
 tooltip label {
   background-color: #1e1e1e;
