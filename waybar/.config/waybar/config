@@ -62,7 +62,7 @@
     }
   },
   "mpris": {
-    "format": "{player_icon} {title} - {album} - {artist}",
+    "format": "  {player_icon}  {title} - {artist}",
     "format-paused": "{status_icon}",
     "player": "ncspot",
     "player-icons": {
