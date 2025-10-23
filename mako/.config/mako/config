@@ -1,5 +1,5 @@
 max-visible=8
-layer=overlay
+layer=top
 font=Sarasa UI SC 11
 background-color=#2e3440dd
 text-color=#e5e9f0
@@ -63,3 +63,17 @@ text-color=#d8dee9aa
 border-color=#A3BE8C
 background-color=#243033cc
 border-size=2
+
+[mode=dnd]
+# Do Not Disturb mode: hide all notifications while active.
+invisible=1
+
+# Ensure second-pass criteria don't re-show notifications while DND is active
+[mode=dnd grouped]
+invisible=1
+
+[mode=dnd group-index=0]
+invisible=1
+
+[mode=dnd hidden]
+invisible=1
