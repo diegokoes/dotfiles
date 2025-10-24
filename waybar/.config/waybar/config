@@ -48,6 +48,22 @@
     "scroll-step": 0.2,
     "tooltip": false
   },
+  "hyprland/window": {
+    "format": "{title}",
+    "max-length": 50,
+    "tooltip": false,
+    "separate-outputs": true,
+    "icon": true,
+    "icon-size": 16,
+    "rewrite": {
+      "(.*) - (Firefox Developer Edition|Mozilla Firefox)": "$1",
+      "(.*) — (Firefox Developer Edition|Mozilla Firefox)": "$1",
+      "(.*) - (Visual Studio Code)": "$1",
+      "(.*)(Ghostty)": "$1",
+      "(.*) - (Discord)": "$1",
+      "(.*) - (YouTube — Firefox Developer Edition)": "$1"
+    }
+  },
   "hyprland/workspaces": {
     "disable-scroll": true,
     "all-outputs": true,
@@ -76,28 +92,8 @@
     "icon-size": 16,
     "spacing": 8
   },
-  "hyprland/windowcount": {
-    "format": "{}",
-    "separate-outputs": true
-  },
-  "hyprland/window": {
-    "format": "{title}",
-    "max-length": 50,
-    "tooltip": false,
-    "separate-outputs": true,
-    "icon": true,
-    "icon-size": 16,
-    "rewrite": {
-      "(.*) - (Firefox Developer Edition|Mozilla Firefox)": "$1",
-      "(.*) — (Firefox Developer Edition|Mozilla Firefox)": "$1",
-      "(.*) - (Visual Studio Code)": "$1",
-      "(.*)(Ghostty)": "$1",
-      "(.*) - (Discord)": "$1",
-      "(.*) - (YouTube — Firefox Developer Edition)": "$1"
-    }
-  },
   "mpris": {
-    "format": "  {player_icon}  {title} - {artist}",
+    "format": "  {player_icon}  {title}",
     "format-paused": "{status_icon}",
     "player": "ncspot",
     "player-icons": {

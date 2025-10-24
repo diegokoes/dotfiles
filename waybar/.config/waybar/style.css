@@ -71,8 +71,10 @@ window {
   margin: 0 0 4px 0;
   border-radius: 0 0 0 0;
 }
-
-#mpris.stopped {
+#mpris.paused {
+  color: rgba(222, 233, 244, 0.65);
+}
+I #mpris.stopped {
   color: #dee9f4;
   opacity: 0.7;
   background: transparent;
@@ -161,9 +163,6 @@ window {
   padding: 4px 10px;
   margin: 0 0 4px 0;
   border-radius: 0 12px 12px 0;
-}
-window#waybar.empty #window {
-  background-color: transparent;
 }
 
 #custom-date,
