@@ -22,7 +22,42 @@ window {
   background: transparent;
   border-radius: 0px;
 }
-
+#cpu {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 4px 10px;
+  margin: 0 0 4px 20px;
+  border-radius: 12px 0 0 12px;
+}
+#memory {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 4px 10px;
+  margin: 0 0 4px 0;
+  border-radius: 0;
+}
+#network {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 4px 10px;
+  margin: 0 0 4px 0;
+  border-radius: 0;
+}
+#temperature {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 4px 10px;
+  margin: 0 0 4px 0;
+  border-radius: 0;
+}
+#temperature.critical {
+  color: #fa7906;
+}
+#wireplumber {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 4px 10px;
+  margin: 0 0 4px 0;
+  border-radius: 0;
+}
+#wireplumber.muted {
+  color: rgba(222, 233, 244, 0.65);
+}
 #mpris {
   color: #dee9f4;
   background: transparent;
@@ -34,7 +69,7 @@ window {
   background: rgba(0, 0, 0, 0.7);
   padding: 4px 10px;
   margin: 0 0 4px 0;
-  border-radius: 0 12px 12px 0;
+  border-radius: 0 0 0 0;
 }
 
 #mpris.stopped {
@@ -124,8 +159,8 @@ window {
 #window:not(.empty) {
   background: rgba(0, 0, 0, 0.7);
   padding: 4px 10px;
-  margin: 0 0 4px 20px;
-  border-radius: 12px 0px 0px 12px;
+  margin: 0 0 4px 0;
+  border-radius: 0 12px 12px 0;
 }
 window#waybar.empty #window {
   background-color: transparent;

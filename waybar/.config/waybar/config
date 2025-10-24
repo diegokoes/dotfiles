@@ -3,17 +3,51 @@
   "exclusive": false,
   "margin-top": 0,
   "modules-left": [
-    "hyprland/window",
-    "mpris"
+    "cpu",
+    "memory",
+    "network",
+    "temperature",
+    "wireplumber",
+    "hyprland/window"
   ],
   "modules-center": [
     "hyprland/workspaces"
   ],
   "modules-right": [
     "tray",
+    "mpris",
     "custom/dnd",
     "clock"
   ],
+  "cpu": {
+    "interval": 10,
+    "format": "{}%",
+    "max-length": 10,
+    "tooltip": false
+  },
+  "memory": {
+    "interval": 30,
+    "format": "{}%",
+    "max-length": 10
+  },
+  "network": {
+    "format": "{ifname}",
+    "tooltip": false
+  },
+  "temperature": {
+    "critical-threshold": 80,
+    "format-critical": "{temperatureC}°C ",
+    "format": "{temperatureC}°C ",
+    "tooltip": false
+  },
+  "wireplumber": {
+    "format": "{volume}%",
+    "format-muted": "MUTED",
+    "on-click": "helvum",
+    "max-volume": 150,
+    "scroll-step": 0.2,
+    "tooltip": false
+  },
   "hyprland/workspaces": {
     "disable-scroll": true,
     "all-outputs": true,
@@ -71,7 +105,8 @@
     },
     "status-icons": {
       "paused": "PAUSED"
-    }
+    },
+    "tooltip": false
   },
   "custom/dnd": {
     "exec": "~/.config/waybar/scripts/dnd.sh",
