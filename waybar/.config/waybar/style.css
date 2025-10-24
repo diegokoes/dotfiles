@@ -96,7 +96,7 @@ I #mpris.stopped {
 
 #workspaces {
   background: rgba(0, 0, 0, 0.7);
-  margin: 0 0px 4px 6px;
+  margin: 0 0px 4px 0;
   padding: 4px 8px;
   border-radius: 12px;
 }
