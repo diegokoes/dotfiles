@@ -5,9 +5,9 @@
   "modules-left": [
     "cpu",
     "memory",
-    "network",
     "temperature",
     "wireplumber",
+    "network",
     "hyprland/window"
   ],
   "modules-center": [
@@ -36,8 +36,8 @@
   },
   "temperature": {
     "critical-threshold": 80,
-    "format-critical": "{temperatureC}°C",
-    "format": "{temperatureC}°C",
+    "format-critical": "{temperatureC}°",
+    "format": "{temperatureC}°",
     "tooltip": false
   },
   "wireplumber": {
