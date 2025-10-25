@@ -60,7 +60,8 @@
       "(.*) - (Visual Studio Code)": "$1",
       "(.*)(Ghostty)": "$1",
       "(.*) - (Discord)": "$1",
-      "(.*) - (YouTube — Firefox Developer Edition)": "$1"
+      "(.*) - (YouTube — Firefox Developer Edition)": "$1",
+      "(.*) - (Obsidian v.*)": "$1"
     }
   },
   "hyprland/workspaces": {
