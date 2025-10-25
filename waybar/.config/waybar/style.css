@@ -19,41 +19,37 @@ window {
 }
 
 #waybar {
-  background: transparent;
+  background: rgba(0, 0, 0, 0.7);
   border-radius: 0px;
+  min-height: 20px;
 }
 #cpu {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 4px 10px;
-  margin: 0 0 4px 20px;
-  border-radius: 12px 0 0 12px;
+  background: transparent;
+  padding: 2px 10px;
+  margin: 0 0 0 20px;
 }
 #memory {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 4px 10px;
-  margin: 0 0 4px 0;
-  border-radius: 0;
+  background: transparent;
+  padding: 2px 10px;
+  margin: 0;
 }
 #network {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 4px 10px;
-  margin: 0 0 4px 0;
-  border-radius: 0;
+  background: transparent;
+  padding: 2px 10px;
+  margin: 0;
 }
 #temperature {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 4px 10px;
-  margin: 0 0 4px 0;
-  border-radius: 0;
+  background: transparent;
+  padding: 2px 10px;
+  margin: 0;
 }
 #temperature.critical {
   color: #fa7906;
 }
 #wireplumber {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 4px 10px;
-  margin: 0 0 4px 0;
-  border-radius: 0;
+  background: transparent;
+  padding: 2px 10px;
+  margin: 0;
 }
 #wireplumber.muted {
   color: rgba(222, 233, 244, 0.65);
@@ -66,15 +62,14 @@ window {
 }
 #mpris.playing,
 #mpris.paused {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 4px 10px;
-  margin: 0 0 4px 0;
-  border-radius: 0 0 0 0;
+  background: transparent;
+  padding: 2px 10px;
+  margin: 0;
 }
 #mpris.paused {
   color: rgba(222, 233, 244, 0.65);
 }
-I #mpris.stopped {
+#mpris.stopped {
   color: #dee9f4;
   opacity: 0.7;
   background: transparent;
@@ -83,10 +78,9 @@ I #mpris.stopped {
 }
 
 #tray {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 4px 10px;
-  margin: 0 0 4px 0;
-  border-radius: 12px 0 0 12px;
+  background: transparent;
+  padding: 2px 10px;
+  margin: 0;
 }
 
 /* ==========================
@@ -95,17 +89,16 @@ I #mpris.stopped {
    ========================== */
 
 #workspaces {
-  background: rgba(0, 0, 0, 0.7);
-  margin: 0 0px 4px 0;
-  padding: 4px 8px;
-  border-radius: 12px;
+  background: transparent;
+  margin: 0;
+  padding: 2px 8px;
 }
 #workspaces button {
   border: none;
   background: transparent;
   color: #dee9f4;
   min-width: 20px;
-  min-height: 18px;
+  min-height: 16px;
   padding: 0;
   margin: 0 3.5px;
   border-radius: 0;
@@ -159,18 +152,16 @@ I #mpris.stopped {
    ========================== */
 
 #window:not(.empty) {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 4px 10px;
-  margin: 0 0 4px 0;
-  border-radius: 0 12px 12px 0;
+  background: transparent;
+  padding: 2px 10px;
+  margin: 0;
 }
 
 #custom-date,
 #clock {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 4px 10px;
-  margin: 0 20px 4px 0;
-  border-radius: 0 12px 12px 0;
+  background: transparent;
+  padding: 2px 10px;
+  margin: 0 20px 0 0;
 }
 
 #custom-date {
@@ -179,10 +170,9 @@ I #mpris.stopped {
 }
 
 #custom-dnd {
-  background: rgba(0, 0, 0, 0.7);
+  background: transparent;
   padding: 0 12px;
-  margin: 0 0 4px 0;
-  border-radius: 0;
+  margin: 0;
 }
 #custom-dnd.active {
   color: #fa7906;
