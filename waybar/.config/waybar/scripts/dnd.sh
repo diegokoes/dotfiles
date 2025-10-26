@@ -10,8 +10,8 @@ cmd_exists() {
 }
 
 # Allow overriding icons via environment variables
-ICON_ON=${DND_ICON_ON:-"󰒳"}   # default: bell-slash
-ICON_OFF=${DND_ICON_OFF:-"󱥸"}  # default: bell
+ICON_ON=${DND_ICON_ON:-"󱥸"}
+ICON_OFF=${DND_ICON_OFF:-"󱥸"}
 
 get_status() {
   if ! cmd_exists makoctl; then
