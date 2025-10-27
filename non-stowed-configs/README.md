@@ -1,5 +1,9 @@
 # Configs
 
+## skip discord update check
+
+on .config/discord/settings.json >> "SKIP_HOST_UPDATE": true
+
 ## changing login font
 
 ```bash
