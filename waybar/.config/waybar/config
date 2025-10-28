@@ -2,11 +2,11 @@
   "layer": "top",
   "exclusive": false,
   "modules-left": [
+    "network",
     "cpu",
     "memory",
     "temperature",
     "wireplumber",
-    "network",
     "hyprland/window"
   ],
   "modules-center": [
@@ -19,15 +19,32 @@
     "clock"
   ],
   "cpu": {
-    "interval": 10,
-    "format": "{}%",
-    "max-length": 10,
-    "tooltip": false
+    "format": "{icon}",
+    "tooltip": false,
+    "format-icons": [
+      "▁",
+      "▂",
+      "▃",
+      "▄",
+      "▅",
+      "▆",
+      "▇",
+      "█"
+    ]
   },
   "memory": {
-    "interval": 30,
-    "format": "{}%",
-    "max-length": 10
+    "format": "{icon}",
+    "tooltip": false,
+    "format-icons": [
+      "▁",
+      "▂",
+      "▃",
+      "▄",
+      "▅",
+      "▆",
+      "▇",
+      "█"
+    ]
   },
   "network": {
     "family": "ipv4",
@@ -37,16 +54,25 @@
   },
   "temperature": {
     "critical-threshold": 80,
-    "format-critical": "{temperatureC}°",
-    "format": "{temperatureC}°",
-    "tooltip": false
+    "format": "{icon}",
+    "tooltip": false,
+    "format-icons": [
+      "▁",
+      "▂",
+      "▃",
+      "▄",
+      "▅",
+      "▆",
+      "▇",
+      "█"
+    ]
   },
   "wireplumber": {
     "format": "{volume}%",
     "format-muted": "MUTED",
     "on-click": "helvum",
     "max-volume": 150,
-    "scroll-step": 0.2,
+    "scroll-step": 4,
     "tooltip": false
   },
   "hyprland/window": {
