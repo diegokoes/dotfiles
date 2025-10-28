@@ -22,7 +22,7 @@
     "format-wifi": " {bandwidthDownBytes}   {bandwidthUpBytes}",
     "format-ethernet": " {bandwidthDownBytes}   {bandwidthUpBytes}",
     "tooltip": true,
-    "tooltip-format": "{ifname}",
+    "tooltip-format": "{ifname}: {ipaddr}",
     "format-disconnected": "󰖪"
   },
   "cpu": {
