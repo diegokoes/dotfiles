@@ -5,7 +5,6 @@
     "network",
     "cpu",
     "memory",
-    "temperature",
     "wireplumber",
     "hyprland/window"
   ],
@@ -41,21 +40,6 @@
     ]
   },
   "memory": {
-    "format": "{icon}",
-    "tooltip": false,
-    "format-icons": [
-      "▁",
-      "▂",
-      "▃",
-      "▄",
-      "▅",
-      "▆",
-      "▇",
-      "█"
-    ]
-  },
-  "temperature": {
-    "critical-threshold": 80,
     "format": "{icon}",
     "tooltip": false,
     "format-icons": [
