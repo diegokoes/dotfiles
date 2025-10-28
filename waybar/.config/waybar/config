@@ -18,6 +18,14 @@
     "custom/dnd",
     "clock"
   ],
+  "network": {
+    "interval": 1,
+    "format-wifi": " {bandwidthDownBytes}   {bandwidthUpBytes}",
+    "format-ethernet": " {bandwidthDownBytes}   {bandwidthUpBytes}",
+    "tooltip": true,
+    "tooltip-format": "{ifname}",
+    "format-disconnected": "󰖪"
+  },
   "cpu": {
     "format": "{icon}",
     "tooltip": false,
@@ -46,12 +54,6 @@
       "█"
     ]
   },
-  "network": {
-    "family": "ipv4",
-    "format": "{ifname} - {ipaddr}",
-    "tooltip": false,
-    "max-length": 50
-  },
   "temperature": {
     "critical-threshold": 80,
     "format": "{icon}",
@@ -68,12 +70,22 @@
     ]
   },
   "wireplumber": {
-    "format": "{volume}%",
-    "format-muted": "MUTED",
+    "format": "{icon}",
+    "format-muted": "M",
+    "tooltip": false,
+    "format-icons": [
+      "▁",
+      "▂",
+      "▃",
+      "▄",
+      "▅",
+      "▆",
+      "▇",
+      "█"
+    ],
     "on-click": "helvum",
     "max-volume": 150,
-    "scroll-step": 4,
-    "tooltip": false
+    "scroll-step": 4
   },
   "hyprland/window": {
     "format": "{title}",
