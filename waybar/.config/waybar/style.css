@@ -56,8 +56,9 @@
 }
 #wireplumber {
   background: transparent;
-  padding: 0 6px;
+  padding: 0 10px;
   margin: 0;
+  font-size: 16px;
 }
 #wireplumber.muted {
   color: rgba(222, 233, 244, 0.65);
