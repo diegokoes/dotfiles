@@ -19,3 +19,14 @@ sudo systemctl restart getty@tty
 ExecStartPre=
 ExecStartPre=/usr/bin/setfont ter-132b
 ```
+
+## less agressive IWD <> NM
+
+```conf
+[General]
+EnableNetworkConfiguration=false
+UseDefaultInterface=true
+
+[Network]
+NameResolvingService=systemd
+```
