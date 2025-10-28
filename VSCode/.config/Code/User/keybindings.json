@@ -367,10 +367,6 @@
   },
   {
     "key": "ctrl+1",
-    "command": "workbench.panel.chat.view.copilot.focus"
-  },
-  {
-    "key": "ctrl+1",
     "command": "workbench.panel.chat",
     "when": "workbench.panel.chat.view.copilot.active"
   },
