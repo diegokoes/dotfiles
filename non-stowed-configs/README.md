@@ -30,3 +30,37 @@ UseDefaultInterface=true
 [Network]
 NameResolvingService=systemd
 ```
+
+## gammastep
+
+> Without uncommenting these, gammastep starts before Wayland
+
+### Editing /home/koes/.config/systemd/user/gammastep.service.d/ove>
+
+### Anything between here and the comment below will become the con>
+
+### Edits below this comment will be discarded
+
+### /usr/lib/systemd/user/gammastep.service
+
+# [Unit]
+
+# Description=Display colour temperature adjustment
+
+# PartOf=graphical-session.target
+
+# After=graphical-session.target
+
+#
+
+# [Service]
+
+# ExecStart=/usr/bin/gammastep
+
+# Restart=on-failure
+
+#
+
+# [Install]
+
+# WantedBy=graphical-session.target
