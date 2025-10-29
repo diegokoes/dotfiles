@@ -1,4 +1,4 @@
-max-visible=8
+max-visible=4
 layer=top
 font=Sarasa UI SC 11
 background-color=#2e3440dd
@@ -12,7 +12,7 @@ anchor=top-right
 margin=23,3,0,0
 outer-margin=10
 padding=12
-width=360
+width=280
 height=140
 icons=1
 icon-location=left
