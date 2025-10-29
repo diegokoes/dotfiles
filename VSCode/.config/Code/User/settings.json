@@ -16,7 +16,6 @@
   "editor.wordWrap": "wordWrapColumn",
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.scrollbar.verticalScrollbarSize": 10,
-  "editor.lineHeight": 0,
   "editor.scrollbar.vertical": "hidden",
   "editor.fontVariations": false,
   "editor.formatOnSave": true,
@@ -29,7 +28,8 @@
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.renderWhitespace": "none",
   "editor.rulers": [
-    80
+    80,
+    120
   ],
   "editor.renderLineHighlight": "gutter",
   "editor.smoothScrolling": true,
@@ -100,7 +100,9 @@
     "workbench.preferredDarkColorTheme",
     "workbench.preferredLightColorTheme",
     "editor.suggest.showStatusBar",
-    "chat.agent.maxRequests"
+    "chat.agent.maxRequests",
+    "html.format.wrapLineLength",
+    "editor.rulers"
   ],
   "workbench.tree.renderIndentGuides": "always",
   "workbench.activityBar.location": "bottom",
@@ -297,7 +299,6 @@
   "zenMode.restore": false,
   "search.quickOpen.includeHistory": false,
   "settingsSync.ignoredSettings": [],
-  "html.format.wrapLineLength": 80,
   "indentRainbow.colorOnWhiteSpaceOnly": false,
   "debug.showInStatusBar": "never",
   "zenMode.hideLineNumbers": false,
@@ -394,4 +395,8 @@
   },
   "editor.minimap.renderCharacters": false,
   "editor.minimap.showSlider": "always",
+  "editor.lineHeight": 23,
+  "prettier.printWidth": 120,
+  "editor.wordWrapColumn": 120,
+  "editor.wrapOnEscapedLineFeeds": true,
 }
