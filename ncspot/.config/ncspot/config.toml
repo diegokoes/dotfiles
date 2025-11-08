@@ -1,4 +1,3 @@
-audio_cache_size=3086
     [theme]
     background = "#000000"
     primary = "#F8F8F2"
@@ -17,3 +16,4 @@ audio_cache_size=3086
     cmdline = "#f8f8f2"
         cmdline_bg = "#000000"
     search_match = "#ff79c6"
+audio_cache_size=3086

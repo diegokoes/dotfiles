@@ -318,7 +318,7 @@
     "■",
     "■",
     "■",
-    "■",
+    "■"
   ],
   "errorLens.editorHoverPartsEnabled": {
     "buttonsEnabled": true
@@ -337,7 +337,6 @@
   "path-intellisense.autoSlashAfterDirectory": true,
   "path-intellisense.extensionOnImport": true,
   "path-intellisense.autoTriggerNextSuggestion": true,
-  "discord.removeDetails": true,
   "workbench.preferredHighContrastColorTheme": "Monokai Pro (Filter Ristretto)",
   "workbench.preferredHighContrastLightColorTheme": "Monokai Pro Light (Filter Sun)",
   "window.autoDetectColorScheme": true,
@@ -360,7 +359,7 @@
   "[github-actions-workflow]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
-  "errorLens.enabled": false,
+  "errorLens.enabled": true,
   "chat.agent.maxRequests": 50,
   "workbench.layoutControl.enabled": false,
   "window.customTitleBarVisibility": "windowed",
@@ -393,10 +392,10 @@
       ]
     }
   },
-  "editor.minimap.renderCharacters": false,
-  "editor.minimap.showSlider": "always",
   "editor.lineHeight": 23,
   "prettier.printWidth": 120,
   "editor.wordWrapColumn": 120,
   "editor.wrapOnEscapedLineFeeds": true,
+  "editor.minimap.showSlider": "always",
+  "editor.minimap.renderCharacters": false,
 }
