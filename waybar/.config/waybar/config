@@ -1,6 +1,5 @@
 {
-  "layer": "top",
-  "exclusive": false,
+  "layer": "bot",
   "modules-left": [
     "network",
     "cpu",

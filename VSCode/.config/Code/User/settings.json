@@ -398,4 +398,5 @@
   "editor.wrapOnEscapedLineFeeds": true,
   "editor.minimap.showSlider": "always",
   "editor.minimap.renderCharacters": false,
+  "editor.minimap.size": "fill",
 }
