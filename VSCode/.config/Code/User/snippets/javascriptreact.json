@@ -1,0 +1,133 @@
+{
+	"React Functional Component": {
+		"prefix": "rc",
+		"body": [
+			"export default function ${1:ComponentName}() {",
+			"\treturn (",
+			"\t\t<div>",
+			"\t\t\t$0",
+			"\t\t</div>",
+			"\t);",
+			"};"
+		],
+		"description": "Create a React functional component"
+	},
+	"useState Hook": {
+		"prefix": "us",
+		"body": [
+			"const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState($2);"
+		],
+		"description": "Create a useState hook"
+	},
+	"useEffect Hook": {
+		"prefix": "ue",
+		"body": [
+			"useEffect(() => {",
+			"\t$1",
+			"}, [$2]);"
+		],
+		"description": "Create a useEffect hook"
+	},
+	"useEffect Hook with Cleanup": {
+		"prefix": "uec",
+		"body": [
+			"useEffect(() => {",
+			"\t$1",
+			"\t",
+			"\treturn () => {",
+			"\t\t$2",
+			"\t};",
+			"}, [$3]);"
+		],
+		"description": "Create a useEffect hook with cleanup"
+	},
+	"useRef Hook": {
+		"prefix": "ur",
+		"body": [
+			"const ${1:ref} = useRef($2);"
+		],
+		"description": "Create a useRef hook"
+	},
+	"Import React Hooks": {
+		"prefix": "imh",
+		"body": [
+			"import { ${1|useState,useEffect,useRef,useContext,useReducer,useCallback,useMemo,useState\\, useEffect,useState\\, useRef,useEffect\\, useRef,useState\\, useEffect\\, useRef|} } from 'react';"
+		],
+		"description": "Import React hooks"
+	},
+	"React Router - Router Setup": {
+		"prefix": "rrd1",
+		"body": [
+			"import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';"
+		],
+		"description": "Import React Router router setup"
+	},
+	"React Router - Data & Navigation": {
+		"prefix": "rrd2",
+		"body": [
+			"import { ${1|useLoaderData\\, useParams,Link\\, NavLink,useNavigate,useLocation,useLoaderData,useParams,Link,NavLink|} } from 'react-router-dom';"
+		],
+		"description": "Import React Router data and navigation hooks"
+	},
+	"useEffect Hook with Fetch and Cleanup": {
+		"prefix": "uef",
+		"body": [
+			"useEffect(() => {",
+			"\t(async () => {",
+			"\t\ttry {",
+			"\t\t\tconst ${1:respuesta} = await fetch(\"${2:URL}\", {",
+			"\t\t\t\tmethod: \"${3:GET}\",",
+			"\t\t\t});",
+			"\t\t\tconst ${4:cuerpo} = await ${1:respuesta}.json();",
+			"\t\t\t$5",
+			"\t\t} catch (e) {",
+			"\t\t\t$6",
+			"\t\t\tconsole.error(\"${7:Error}:\", e);",
+			"\t\t}",
+			"\t})();",
+			"}, [${8}]);"
+		],
+		"description": "Create a useEffect hook with fetch and cleanup"
+	},
+	"Component Regions": {
+		"prefix": "regions",
+		"body": [
+			"//#region ---- STATE ----",
+			"",
+			"//#endregion",
+			"",
+			"//#region ---- EFFECTS ----",
+			"",
+			"//#endregion",
+			"",
+			"//#region ---- HANDLERS ----",
+			"",
+			"//#endregion",
+			"",
+			"//#region ---- UTILS ----",
+			"",
+			"//#endregion"
+		],
+		"description": "Insert region comment blocks for STATE, EFFECTS, HANDLERS, UTILS"
+	},
+	"fetch": {
+		"prefix": "fetch",
+		"body": [
+			"try {",
+			"  const respuesta = await fetch(\"${1:URL}\", {",
+			"    method: \"${2:POST}\",",
+			"    headers: {",
+			"      \"Content-Type\": \"application/json\",",
+			"    },",
+			"    body: JSON.stringify(${3}),",
+			"  });",
+			"",
+			"  const data = await respuesta.json();",
+			"  $0",
+			"} catch (error) {",
+			"  console.error(\"Error:\", error);",
+			"}"
+		],
+		"description": "Fetch with try-catch for node backend"
+	}
+}

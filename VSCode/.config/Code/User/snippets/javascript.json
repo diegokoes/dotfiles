@@ -1,0 +1,166 @@
+{
+
+    "Express POST Endpoint": {
+        "prefix": "exppost",
+        "body": [
+            "${1:router}.post(\"/${2:path}\", async (req, resp) => {",
+            "\ttry {",
+            "\t\tconst { ${3:params} } = req.body;",
+            "\t\t",
+            "\t\tawait mongoose.connect(process.env.MONGODB_URL);",
+            "\t\tconst ${4:collection} = mongoose.connection.collection(\"${5:collectionName}\");",
+            "\t\t",
+            "\t\t${6:// Your logic here}",
+            "\t\t",
+            "\t\treturn resp.status(200).json({ ok: true, ${7:data} });",
+            "\t} catch (error) {",
+            "\t\tconsole.log(\"Error in ${2:path}:\", error);",
+            "\t\treturn resp.status(500).send(\"ERROR EN SERVIDOR\");",
+            "\t} finally {",
+            "\t\tmongoose.connection.close();",
+            "\t}",
+            "});"
+        ],
+        "description": "Express POST endpoint with MongoDB connection"
+    },
+    "Express GET Endpoint": {
+        "prefix": "expget",
+        "body": [
+            "${1:router}.get(\"/${2:path}\", async (req, resp) => {",
+            "\ttry {",
+            "\t\tconst { ${3:params} } = req.query;",
+            "\t\t",
+            "\t\tawait mongoose.connect(process.env.MONGODB_URL);",
+            "\t\tconst ${4:collection} = mongoose.connection.collection(\"${5:collectionName}\");",
+            "\t\t",
+            "\t\tconst ${6:result} = await ${4:collection}.find({ ${7:query} }).toArray();",
+            "\t\t",
+            "\t\treturn resp.status(200).json({ codigo: 0, mensaje: \"${8:success}\", ${6:result} });",
+            "\t} catch (error) {",
+            "\t\tconsole.log(\"Error in ${2:path}:\", error);",
+            "\t\treturn resp.status(500).send(\"ERROR EN SERVIDOR\");",
+            "\t} finally {",
+            "\t\tmongoose.connection.close();",
+            "\t}",
+            "});"
+        ],
+        "description": "Express GET endpoint with MongoDB connection"
+    },
+    "MongoDB Connection Block": {
+        "prefix": "mongoconnect",
+        "body": [
+            "await mongoose.connect(process.env.MONGODB_URL);",
+            "const ${1:collection} = mongoose.connection.collection(\"${2:collectionName}\");",
+            "",
+            "${3:// Your database operations}",
+            "",
+            "await mongoose.connection.close();"
+        ],
+        "description": "MongoDB connection with collection access"
+    },
+    "JWT Sign Token": {
+        "prefix": "jwtsign",
+        "body": [
+            "const ${1:token} = jwt.sign(",
+            "\t{",
+            "\t\temail: ${2:email},",
+            "\t\tidCliente: ${3:idCliente}.toString(),",
+            "\t},",
+            "\tprocess.env.JWT_SIGNING_KEY,",
+            "\t{ expiresIn: \"${4:2h}\" }",
+            ");"
+        ],
+        "description": "Create JWT token"
+    },
+    "JWT Verify Token": {
+        "prefix": "jwtverify",
+        "body": [
+            "const ${1:payload} = jwt.verify(${2:token}, process.env.JWT_SIGNING_KEY);"
+        ],
+        "description": "Verify JWT token"
+    },
+    "MongoDB FindOne": {
+        "prefix": "mongofindone",
+        "body": [
+            "const ${1:result} = await ${2:collection}.findOne({ ${3:query} });"
+        ],
+        "description": "MongoDB findOne operation"
+    },
+    "MongoDB InsertOne": {
+        "prefix": "mongoinsert",
+        "body": [
+            "const ${1:result} = await ${2:collection}.insertOne({",
+            "\t${3:data}",
+            "});"
+        ],
+        "description": "MongoDB insertOne operation"
+    },
+    "MongoDB UpdateOne": {
+        "prefix": "mongoupdate",
+        "body": [
+            "const ${1:update} = await ${2:collection}.updateOne(",
+            "\t{ ${3:filter} },",
+            "\t{ \\$set: { ${4:updates} } }",
+            ");"
+        ],
+        "description": "MongoDB updateOne operation"
+    },
+    "Bcrypt Hash Password": {
+        "prefix": "bcrypthash",
+        "body": [
+            "const ${1:hashedPassword} = await bcrypt.hash(${2:password}, 10);"
+        ],
+        "description": "Hash password with bcrypt"
+    },
+    "Bcrypt Compare Password": {
+        "prefix": "bcryptcompare",
+        "body": [
+            "const ${1:match} = await bcrypt.compare(${2:password}, ${3:hashedPassword});"
+        ],
+        "description": "Compare password with bcrypt"
+    },
+    "Try-Catch-Finally with MongoDB": {
+        "prefix": "trycatchmongo",
+        "body": [
+            "try {",
+            "\tawait mongoose.connect(process.env.MONGODB_URL);",
+            "\t${1:// Your logic here}",
+            "} catch (error) {",
+            "\tconsole.log(\"${2:Error message}:\", error);",
+            "\treturn resp.status(500).send(\"ERROR EN SERVIDOR\");",
+            "} finally {",
+            "\tmongoose.connection.close();",
+            "}"
+        ],
+        "description": "Try-catch-finally block with MongoDB connection"
+    },
+    "Express Middleware Function": {
+        "prefix": "expmiddleware",
+        "body": [
+            "module.exports = (${1:serverExpress}) => {",
+            "\t${1:serverExpress}.use(${2:middleware});",
+            "\t$0",
+            "};"
+        ],
+        "description": "Express middleware configuration function"
+    },
+    "MongoDB Regex Pattern": {
+        "prefix": "mongoregex",
+        "body": [
+            "const ${1:pattern} = ${2:condition} ? /^\\d+$/ : new RegExp(`^\\${${3:value}}-[0-9]+`);"
+        ],
+        "description": "MongoDB regex pattern for queries"
+    },
+    "Express Response with Codigo": {
+        "prefix": "respcodigo",
+        "body": [
+            "res.status(200).send({",
+            "\tcodigo: ${1:0},",
+            "\tmensaje: \"${2:mensaje}\",",
+            "\t${3:data}: ${4:[]},",
+            "});"
+        ],
+        "description": "Express response with codigo, mensaje, and data"
+    }
+
+}
