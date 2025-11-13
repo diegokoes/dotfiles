@@ -8,8 +8,8 @@
     "hyprland/workspaces"
   ],
   "modules-right": [
-    "tray",
     "mpris",
+    "tray",
     "custom/dnd",
     "custom/bluetooth",
     "wireplumber",
