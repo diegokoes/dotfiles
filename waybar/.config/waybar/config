@@ -2,9 +2,6 @@
   "layer": "bot",
   "modules-left": [
     "network",
-    "cpu",
-    "memory",
-    "wireplumber",
     "hyprland/window"
   ],
   "modules-center": [
@@ -14,6 +11,8 @@
     "tray",
     "mpris",
     "custom/dnd",
+    "custom/bluetooth",
+    "wireplumber",
     "clock"
   ],
   "network": {
@@ -65,6 +64,14 @@
     "on-click": "helvum",
     "max-volume": 150,
     "scroll-step": 4
+  },
+  "custom/bluetooth": {
+    "exec": "~/.config/waybar/scripts/bluetooth.sh",
+    "return-type": "json",
+    "interval": 2,
+    "signal": 8,
+    "tooltip": true,
+    "on-click": "~/.config/waybar/scripts/bluetooth.sh toggle"
   },
   "hyprland/window": {
     "format": "{title}",
