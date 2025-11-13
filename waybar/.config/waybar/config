@@ -124,6 +124,9 @@
     "ignored-players": [
       "firefox"
     ],
+    "title-len": 48,
+    "dynamic-len": 48,
+    "ellipsis": "…",
     "player-icons": {
       "default": "▶"
     },
