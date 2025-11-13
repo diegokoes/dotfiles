@@ -134,7 +134,7 @@
 #mpris {
   color: #dee9f4;
   background: transparent;
-  padding: 0;
+  padding: 2px 10px;
   margin: 0;
 }
 #mpris.playing,
@@ -150,7 +150,7 @@
   color: #dee9f4;
   opacity: 0.7;
   background: transparent;
-  padding: 0;
+  padding: 2px 10px;
   margin: 0;
 }
 

@@ -121,7 +121,9 @@
   "mpris": {
     "format": "{title}",
     "format-paused": "{status_icon}",
-    "player": "ncspot",
+    "ignored-players": [
+      "firefox"
+    ],
     "player-icons": {
       "default": "▶"
     },
