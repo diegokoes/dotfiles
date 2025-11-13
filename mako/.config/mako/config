@@ -1,9 +1,9 @@
 max-visible=4
 layer=top
 font=Sarasa UI SC 11
-background-color=#2e3440dd
-text-color=#e5e9f0
-border-color=#434c5e66
+background-color=#0b1220FF
+text-color=#E6EEF6FF
+border-color=#5B83D6FF
 border-size=2
 border-radius=12
 max-icon-size=48
@@ -20,7 +20,7 @@ icon-border-radius=8
 markup=1
 actions=1
 ignore-timeout=0
-progress-color=over #88c0ffcc
+progress-color=over #88C0FFFF
 text-alignment=left
 format=<b>%s</b>\n%b
 on-button-left=invoke-default-action
@@ -35,40 +35,38 @@ invisible=0
 
 [hidden]
 format=<b>%h</b> hidden • %t total
-background-color=#3b4252cc
-text-color=#eceff4
-border-color=#4c566a
+background-color=#3B4252FF
+text-color=#ECEFF4FF
+border-color=#4C566AFF
 border-radius=10
 padding=10
 width=320
 
 [urgency=critical]
-background-color=#3b0000cc
-border-color=#ff6b6b
-text-color=#fff5f5
-progress-color=over #ff6b6bcc
+background-color=#4B0000FF
+border-color=#FF6B6BFF
+text-color=#FFF5F5FF
+progress-color=over #FF6B6BFF
 border-size=2
 
 [urgency=normal]
-background-color=#2e3440cc
-border-color=#88c0ff66
-text-color=#e5e9f0
+background-color=#1F2430FF
+border-color=#88C0FFFF
+text-color=#E6EEF6FF
 
 [urgency=low]
-background-color=#2f354066
-border-color=#4c566a44
-text-color=#d8dee9aa
+background-color=#222933FF
+border-color=#4C566AFF
+text-color=#D8DEE9FF
 
 [actionable]
-border-color=#A3BE8C
-background-color=#243033cc
+border-color=#A3BE8CFF
+background-color=#263B2BFF
 border-size=2
 
 [mode=dnd]
-# Do Not Disturb mode: hide all notifications while active.
 invisible=1
 
-# Ensure second-pass criteria don't re-show notifications while DND is active
 [mode=dnd grouped]
 invisible=1
 
