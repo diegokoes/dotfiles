@@ -434,7 +434,7 @@
     "command": "workbench.action.maximizeAuxiliaryBar"
   },
   {
-    "key": "delete ctrl+shift+alt+v",
+    "key": "ctrl+shift+alt+v",
     "command": "markdown.showPreview",
     "when": "!notebookEditorFocused && editorLangId == 'markdown'"
   },
