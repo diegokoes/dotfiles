@@ -21,7 +21,7 @@
     "format-ethernet": " {bandwidthDownBytes}   {bandwidthUpBytes}",
     "tooltip": true,
     "tooltip-format": "{ifname}: {ipaddr}",
-    "format-disconnected": "󰖪"
+    "format-disconnected": "DISCONNECTED"
   },
   "cpu": {
     "format": "{icon}",
