@@ -128,7 +128,6 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.compactFolders": false,
-  "explorer.excludeGitIgnore": true,
   // terminal
   "terminal.integrated.fontFamily": "MesloLGLDZ Nerd Font",
   "terminal.integrated.fontSize": 15,
@@ -403,4 +402,11 @@
   "github.copilot.chat.editor.temporalContext.enabled": true,
   "github.copilot.chat.edits.temporalContext.enabled": true,
   "remote.SSH.experimental.chat": false,
+  "files.exclude": {
+    "**/.DS_Store": false,
+    "**/.git": false,
+    "**/.hg": false,
+    "**/.svn": false,
+    "**/Thumbs.db": false
+  },
 }
