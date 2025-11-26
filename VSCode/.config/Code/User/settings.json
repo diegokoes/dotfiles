@@ -102,7 +102,8 @@
     "editor.suggest.showStatusBar",
     "chat.agent.maxRequests",
     "html.format.wrapLineLength",
-    "editor.rulers"
+    "editor.rulers",
+    "files.exclude"
   ],
   "workbench.tree.renderIndentGuides": "always",
   "workbench.activityBar.location": "bottom",
@@ -402,11 +403,4 @@
   "github.copilot.chat.editor.temporalContext.enabled": true,
   "github.copilot.chat.edits.temporalContext.enabled": true,
   "remote.SSH.experimental.chat": false,
-  "files.exclude": {
-    "**/.DS_Store": false,
-    "**/.git": false,
-    "**/.hg": false,
-    "**/.svn": false,
-    "**/Thumbs.db": false
-  },
 }
