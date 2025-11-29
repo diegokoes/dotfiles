@@ -123,7 +123,8 @@
     "format": "{title}",
     "format-paused": "{status_icon}",
     "ignored-players": [
-      "firefox"
+      "firefox",
+      "vivaldi"
     ],
     "title-len": 48,
     "dynamic-len": 48,
