@@ -57,7 +57,7 @@ print_json() {
     *)
       icon="?"
       css="off"
-      tooltip="Bluetooth: unknown"
+              tooltip="Bluetooth: unknown"
       ;;
   esac
   printf '{"text":"%s","class":["%s"],"tooltip":"%s"}\n' "$icon" "$css" "$tooltip"
