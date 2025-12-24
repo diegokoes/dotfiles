@@ -403,4 +403,5 @@
   "github.copilot.chat.editor.temporalContext.enabled": true,
   "github.copilot.chat.edits.temporalContext.enabled": true,
   "remote.SSH.experimental.chat": false,
+  "chat.viewSessions.enabled": false,
 }
