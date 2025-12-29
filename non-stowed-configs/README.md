@@ -74,6 +74,19 @@ NameResolvingService=systemd
 
 </details>
 
+## vesktop wayland support
+
+<details>
+<summary>View config</summary>
+
+Edit `/usr/share/applications/vesktop.desktop` and add the `--ozone-platform-hint=auto` flag to the Exec line:
+
+```desktop
+Exec=/usr/bin/vesktop --ozone-platform-hint=auto %U
+```
+
+</details>
+
 ## gammastep
 
 > Without uncommenting these, gammastep starts before Wayland
