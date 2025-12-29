@@ -23,7 +23,7 @@ LOGDIR="$HOME/.local/share/hyprland-logs"
 mkdir -p "$LOGDIR"
 
 # Exec replaces the shell -> don't spawn extra processes
-exec Hyprland >"$LOGDIR/$(date +%F_%H-%M-%S).log" 2>&1
+exec start-hyprland >"$LOGDIR/$(date +%F_%H-%M-%S).log" 2>&1
 ```
 
 </details>
