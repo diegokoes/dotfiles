@@ -8,5 +8,5 @@ font-size = 16
 window-padding-x = 0
 window-padding-y = 0
 window-padding-color = extend
-background-opacity = 0.2
+background-opacity = 0.6
 background-blur = true
