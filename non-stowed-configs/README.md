@@ -2,28 +2,18 @@
 
 ## start-wayland script
 
-Script in `~/.local/bin/start-wayland` to auto-start Hyprland on tty1 login
+Script in `~/.zprofile` to auto-start Hyprland on tty1 login
 
 <details>
 <summary>View script</summary>
 
 ```bash
-#!/usr/bin/env bash
-# Start Hyprland only from a real TTY login on tty1 (no nested sessions).
-
-# Abort if already inside a graphical session
-[ -n "$WAYLAND_DISPLAY" ] && exit 0
-[ -n "$DISPLAY" ] && exit 0
-
-# Only run on first virtual terminal
-[ "${XDG_VTNR}" = "1" ] || exit 0
-
-# Optional log directory (helpful if Hyprland fails)
-LOGDIR="$HOME/.local/share/hyprland-logs"
-mkdir -p "$LOGDIR"
-
-# Exec replaces the shell -> don't spawn extra processes
-exec start-hyprland >"$LOGDIR/$(date +%F_%H-%M-%S).log" 2>&1
+─────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+     │ File: .zprofile
+   1 │ # Auto-start Hyprland after a successful login on tty1
+   2 │ if [ -z "$WAYLAND_DISPLAY" ] && [ -z "$DISPLAY" ] && [ "${XDG_VTNR}" = "1" ]; then
+   3 │   exec start-hyprland
+   4 │ fi
 ```
 
 </details>
