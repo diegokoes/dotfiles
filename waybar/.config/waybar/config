@@ -1,5 +1,6 @@
 {
-  "layer": "bot",
+  "layer": "bottom",
+  "position": "top",
   "modules-left": [
     "network",
     "hyprland/window"
