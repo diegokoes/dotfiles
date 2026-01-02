@@ -33,9 +33,6 @@
   ],
   "logo": {
     "type": "auto",
-    "source": "arch",
-    "padding": {
-      "left": 2
-    }
+    "source": "arch"
   }
 }
