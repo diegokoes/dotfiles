@@ -44,7 +44,7 @@ disable_mpris_art_url: false
 # Use -l, --list-players to get player exact name to use with this option
 # The order matters and the first is the most important.
 allowlist:
-  - "Psst"
+  - "Spotify"
 
 #   - "VLC Media Player"
 #   - "Chrome"
