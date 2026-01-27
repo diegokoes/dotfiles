@@ -9,6 +9,7 @@
     "hyprland/workspaces"
   ],
   "modules-right": [
+    "mpris",
     "tray",
     "custom/dnd",
     "custom/bluetooth",
