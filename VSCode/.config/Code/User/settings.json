@@ -1,407 +1,44 @@
 {
-  // Editor
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit",
-    "source.organizeImports": "always",
-    "source.addMissingImports": "explicit"
-  },
-  "editor.fontFamily": "Fira Code",
-  "editor.fontLigatures": false,
-  "editor.mouseWheelZoom": true,
-  "editor.fontSize": 16,
-  "editor.tabSize": 2,
-  "editor.guides.bracketPairs": true,
-  "editor.guides.bracketPairsHorizontal": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.wordWrap": "wordWrapColumn",
-  "editor.multiCursorModifier": "ctrlCmd",
-  "editor.scrollbar.verticalScrollbarSize": 10,
-  "editor.scrollbar.vertical": "hidden",
-  "editor.fontVariations": false,
-  "editor.formatOnSave": true,
-  "editor.cursorBlinking": "phase",
-  "editor.showFoldingControls": "always",
-  "editor.suggest.insertMode": "replace",
-  "editor.acceptSuggestionOnCommitCharacter": false,
-  "editor.tabCompletion": "on",
-  "editor.bracketPairColorization.enabled": true,
-  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-  "editor.renderWhitespace": "none",
-  "editor.rulers": [
-    80,
-    120
-  ],
-  "editor.renderLineHighlight": "gutter",
-  "editor.smoothScrolling": true,
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.fontWeight": "400",
-  "editor.letterSpacing": 0.5,
-  "editor.insertSpaces": true,
-  "editor.formatOnPaste": true,
-  "editor.allowVariableFonts": false,
-  "editor.accessibilitySupport": "off",
-  "editor.codeActions.triggerOnFocusChange": true,
-  "editor.minimap.maxColumn": 80,
-  "editor.formatOnType": true,
-  // workbench
-  "workbench.editor.enablePreview": false,
-  "workbench.startupEditor": "newUntitledFile",
-  "workbench.navigationControl.enabled": false,
-  "workbench.colorTheme": "Monokai Pro Light (Filter Sun)",
-  "workbench.iconTheme": "Monokai Pro Light (Filter Sun) Icons",
-  "workbench.preferredLightColorTheme": "Monokai Pro Light (Filter Sun)",
-  "workbench.preferredDarkColorTheme": "Monokai Pro",
-  "workbench.commandPalette.experimental.suggestCommands": true,
-  "workbench.secondarySideBar.defaultVisibility": "visible",
-  "workbench.settings.applyToAllProfiles": [
-    "editor.tabSize",
-    "editor.wordWrapColumn",
-    "editor.wordWrap",
-    "diffEditor.wordWrap",
-    "editor.fontSize",
-    "editor.formatOnSave",
-    "files.autoSave",
-    "editor.defaultFormatter",
-    "editor.fontFamily",
-    "workbench.colorTheme",
-    "editor.mouseWheelZoom",
-    "editor.formatOnPaste",
-    "editor.accessibilitySupport",
-    "editor.allowVariableFonts",
-    "editor.allowVariableLineHeights",
-    "editor.autoClosingComments",
-    "editor.autoClosingBrackets",
-    "editor.autoClosingDelete",
-    "editor.autoClosingOvertype",
-    "editor.autoClosingQuotes",
-    "editor.autoIndentOnPasteWithinString",
-    "editor.bracketPairColorization.enabled",
-    "editor.bracketPairColorization.independentColorPoolPerBracketType",
-    "editor.codeActions.triggerOnFocusChange",
-    "window.commandCenter",
-    "window.confirmSaveUntitledWorkspace",
-    "window.autoDetectColorScheme",
-    "editor.autoIndent",
-    "editor.autoIndentOnPaste",
-    "editor.codeActionsOnSave",
-    "editor.codeLens",
-    "editor.colorDecorators",
-    "editor.comments.ignoreEmptyLines",
-    "editor.comments.insertSpace",
-    "editor.copyWithSyntaxHighlighting",
-    "editor.defaultColorDecorators",
-    "editor.defaultFoldingRangeProvider",
-    "editor.detectIndentation",
-    "editor.minimap.maxColumn",
-    "editor.minimap.scale",
-    "editor.formatOnType",
-    "emmet.includeLanguages",
-    "github.copilot.chat.codesearch.enabled",
-    "workbench.preferredDarkColorTheme",
-    "workbench.preferredLightColorTheme",
-    "editor.suggest.showStatusBar",
-    "chat.agent.maxRequests",
-    "html.format.wrapLineLength",
-    "editor.rulers",
-    "files.exclude"
-  ],
-  "workbench.tree.renderIndentGuides": "always",
-  "workbench.activityBar.location": "bottom",
-  "workbench.secondarySideBar.showLabels": false,
-  "workbench.sideBar.location": "right",
-  "workbench.panel.showLabels": false,
-  "workbench.panel.opensMaximized": "always",
-  "workbench.tree.expandMode": "doubleClick",
-  "workbench.editor.tabSizingFixedMaxWidth": 180,
-  "workbench.editor.tabSizing": "shrink",
-  "workbench.editor.wrapTabs": true,
-  "files.autoSaveDelay": 1500,
-  "files.trimTrailingWhitespace": true,
-  // window
-  "window.newWindowProfile": "Default",
-  "window.density.editorTabHeight": "compact",
-  "window.menuBarVisibility": "toggle",
-  "window.menuStyle": "native",
-  "window.newWindowDimensions": "maximized",
-  "window.autoDetectHighContrast": false,
-  "window.controlsStyle": "hidden",
-  // explorer
-  "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false,
-  "explorer.compactFolders": false,
-  // terminal
-  "terminal.integrated.fontFamily": "MesloLGLDZ Nerd Font",
-  "terminal.integrated.fontSize": 15,
-  "terminal.integrated.letterSpacing": 1,
-  "terminal.integrated.fontWeightBold": "bold",
-  "terminal.integrated.smoothScrolling": true,
-  "terminal.integrated.copyOnSelection": true,
-  "terminal.integrated.shellIntegration.history": 30,
-  "terminal.integrated.stickyScroll.enabled": true,
-  "terminal.integrated.persistentSessionScrollback": 1000,
-  "terminal.integrated.lineHeight": 0,
-  "terminal.integrated.fontWeight": "700",
-  "terminal.integrated.gpuAcceleration": "on",
-  //Language specific settings
-  //== python
-  "[python]": {
-    "editor.defaultFormatter": "charliermarsh.ruff",
-    "editor.tabSize": 4,
-    "editor.detectIndentation": false
-  },
-  "python.autoComplete.extraPaths": [],
-  "python.analysis.extraPaths": [],
-  "python.analysis.typeCheckingMode": "basic",
-  "python.defaultInterpreterPath": "/bin/python",
-  "python.useEnvironmentsExtension": true,
-  "ruff.lineLength": 80,
-  //== java
-  "java.jdt.ls.java.home": "/usr/lib/jvm/java-21-openjdk",
-  "rsp-ui.rsp.java.home": "/usr/lib/jvm/java-21-openjdk",
-  "java.configuration.runtimes": [
-    {
-      "name": "JavaSE-21",
-      "path": "/usr/lib/jvm/java-21-openjdk",
-      "default": true
-    }
-  ],
-  "maven.pomfile.autoUpdateEffectivePOM": true,
-  "maven.pomfile.globPattern": "pom.xml",
-  "maven.executable.path": "/home/koes//maven/bin/mvn",
-  "maven.executable.preferMavenWrapper": false,
-  //== javascript & typescript
-  "javascript.suggest.paths": false,
-  "typescript.suggest.paths": false,
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  },
-  "emmet.syntaxProfiles": {
-    "javascript": "jsx"
-  },
-  "javascript.preferences.quoteStyle": "single",
-  "typescript.preferences.quoteStyle": "single",
-  "javascript.suggest.autoImports": true,
-  "typescript.suggest.autoImports": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  // json&jsonc
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  //== xml
-  "[xml]": {
-    "editor.defaultFormatter": "redhat.vscode-xml"
-  },
-  // plugins
-  //== project manager
-  "projectManager.git.baseFolders": [
-    "/home/koes/programming"
-  ],
-  //== peacock
-  "peacock.affectStatusBar": false,
-  "peacock.favoriteColors": [
-    {
-      "name": "Angular Red",
-      "value": "#dd0531"
+    "chat.instructionsFilesLocations": {
+        ".github/instructions": true,
+        ".claude/rules": true,
+        "~/.copilot/instructions": true,
+        "~/.claude/rules": true,
+        "C:\\Users\\DIEGOM~1\\AppData\\Local\\Temp\\postman-collections-post-response.instructions.md": true,
+        "C:\\Users\\DIEGOM~1\\AppData\\Local\\Temp\\postman-collections-pre-request.instructions.md": true,
+        "C:\\Users\\DIEGOM~1\\AppData\\Local\\Temp\\postman-folder-post-response.instructions.md": true,
+        "C:\\Users\\DIEGOM~1\\AppData\\Local\\Temp\\postman-folder-pre-request.instructions.md": true,
+        "C:\\Users\\DIEGOM~1\\AppData\\Local\\Temp\\postman-http-request-post-response.instructions.md": true,
+        "C:\\Users\\DIEGOM~1\\AppData\\Local\\Temp\\postman-http-request-pre-request.instructions.md": true,
+        "/tmp/postman-collections-post-response.instructions.md": true,
+        "/tmp/postman-collections-pre-request.instructions.md": true,
+        "/tmp/postman-folder-post-response.instructions.md": true,
+        "/tmp/postman-folder-pre-request.instructions.md": true,
+        "/tmp/postman-http-request-post-response.instructions.md": true,
+        "/tmp/postman-http-request-pre-request.instructions.md": true
     },
-    {
-      "name": "Azure Blue",
-      "value": "#007fff"
-    },
-    {
-      "name": "JavaScript Yellow",
-      "value": "#f9e64f"
-    },
-    {
-      "name": "Mandalorian Blue",
-      "value": "#1857a4"
-    },
-    {
-      "name": "Node Green",
-      "value": "#215732"
-    },
-    {
-      "name": "React Blue",
-      "value": "#61dafb"
-    },
-    {
-      "name": "Something Different",
-      "value": "#832561"
-    },
-    {
-      "name": "Svelte Orange",
-      "value": "#ff3d00"
-    },
-    {
-      "name": "Vue Green",
-      "value": "#42b883"
-    },
-    {
-      "name": "Python",
-      "value": "#FFD43B"
-    }
-  ],
-  "peacock.surpriseMeOnStartup": true,
-  "peacock.affectActivityBar": false,
-  // thunder client
-  "thunder-client.previewFeatures": true,
-  "thunder-client.defaultURL": "http://localhost:8080/",
-  "[markdown]": {
-    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
-    "diffEditor.ignoreTrimWhitespace": false
-  },
-  // git
-  "git.autofetch": true,
-  "git.autoRepositoryDetection": "openEditors",
-  "git.openRepositoryInParentFolders": "always",
-  "git.enableSmartCommit": true,
-  // copilot
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": true,
-    "markdown": false,
-    "scminput": false
-  },
-  "github.copilot.nextEditSuggestions.enabled": true,
-  "github.copilot.chat.codesearch.enabled": true,
-  // code runner
-  "code-runner.runInTerminal": true,
-  // live server
-  "liveServer.settings.donotShowInfoMsg": true,
-  "liveServer.settings.donotVerifyTags": true,
-  // indent rainbow
-  "indentRainbow.ignoreErrorLanguages": [
-    "markdown"
-  ],
-  "redhat.telemetry.enabled": false,
-  "vsicons.dontShowNewVersionMessage": true,
-  "rsp-ui.enableStartServerOnActivation": [
-    {
-      "id": "redhat.vscode-community-server-connector",
-      "name": "Community Server Connector",
-      "startOnActivation": true
-    },
-    {
-      "id": "redhat.vscode-server-connector",
-      "name": "Red Hat Server Connector",
-      "startOnActivation": true
-    }
-  ],
-  "remote.SSH.remotePlatform": {
-    "192.168.1.31": "linux"
-  },
-  "security.workspace.trust.untrustedFiles": "newWindow",
-  "livePreview.showServerStatusNotifications": true,
-  "diffEditor.ignoreTrimWhitespace": false,
-  "zenMode.restore": false,
-  "search.quickOpen.includeHistory": false,
-  "settingsSync.ignoredSettings": [],
-  "indentRainbow.colorOnWhiteSpaceOnly": false,
-  "debug.showInStatusBar": "never",
-  "zenMode.hideLineNumbers": false,
-  "indentRainbow.colors": [
-    "rgba(255,255,64,0.07)",
-    "rgba(127,255,127,0.07)",
-    "rgba(255,127,255,0.07)",
-    "rgba(79,236,236,0.07)"
-  ],
-  "errorLens.codeLensEnabled": true,
-  "errorLens.codeLensLength": {
-    "min": 0,
-    "max": 200
-  },
-  "errorLens.messageTemplate": "$severity $message",
-  "errorLens.severityText": [
-    "■",
-    "■",
-    "■",
-    "■"
-  ],
-  "errorLens.editorHoverPartsEnabled": {
-    "buttonsEnabled": true
-  },
-  "errorLens.messageEnabled": true,
-  "errorLens.enabledDiagnosticLevels": [
-    "error",
-    "warning",
-    "info",
-    "hint"
-  ],
-  "errorLens.statusBarIconsEnabled": true,
-  "errorLens.codeLensTemplate": "$severity $source $message",
-  "errorLens.messageBackgroundMode": "line",
-  "editor.inlineSuggest.edits.allowCodeShifting": "horizontal",
-  "path-intellisense.autoSlashAfterDirectory": true,
-  "path-intellisense.extensionOnImport": true,
-  "path-intellisense.autoTriggerNextSuggestion": true,
-  "workbench.preferredHighContrastColorTheme": "Monokai Pro (Filter Ristretto)",
-  "workbench.preferredHighContrastLightColorTheme": "Monokai Pro Light (Filter Sun)",
-  "window.autoDetectColorScheme": true,
-  "debug.enableStatusBarColor": false,
-  "workbench.view.showQuietly": {
-    "workbench.panel.output": false
-  },
-  "git.confirmSync": false,
-  "[dockercompose]": {
-    "editor.insertSpaces": true,
-    "editor.tabSize": 2,
-    "editor.autoIndent": "advanced",
-    "editor.quickSuggestions": {
-      "other": true,
-      "comments": false,
-      "strings": true
-    },
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "errorLens.enabled": true,
-  "chat.agent.maxRequests": 50,
-  "workbench.layoutControl.enabled": false,
-  "window.customTitleBarVisibility": "windowed",
-  "chat.instructionsFilesLocations": {
-    ".github/instructions": true,
-    "/tmp/postman-collections-post-response.instructions.md": true,
-    "/tmp/postman-collections-pre-request.instructions.md": true,
-    "/tmp/postman-folder-post-response.instructions.md": true,
-    "/tmp/postman-folder-pre-request.instructions.md": true,
-    "/tmp/postman-http-request-post-response.instructions.md": true,
-    "/tmp/postman-http-request-pre-request.instructions.md": true
-  },
-  "workbench.tree.indent": 10,
-  "chat.mcp.gallery.enabled": true,
-  "chat.mcp.serverSampling": {
-    "Global in Code: stripe/agent-toolkit": {
-      "allowedModels": [
-        "copilot/gpt-5-mini",
-        "copilot/auto",
-        "copilot/claude-haiku-4.5",
-        "copilot/claude-3.5-sonnet",
-        "copilot/claude-sonnet-4",
-        "copilot/claude-sonnet-4.5",
-        "copilot/gemini-2.5-pro",
-        "copilot/gpt-4.1",
-        "copilot/gpt-4o",
-        "copilot/gpt-5",
-        "copilot/gpt-5-codex",
-        "copilot/grok-code-fast-1"
-      ]
-    }
-  },
-  "editor.lineHeight": 23,
-  "prettier.printWidth": 120,
-  "editor.wordWrapColumn": 120,
-  "editor.wrapOnEscapedLineFeeds": true,
-  "editor.minimap.showSlider": "always",
-  "editor.minimap.renderCharacters": false,
-  "editor.minimap.size": "fill",
-  "chat.edits2.enabled": true,
-  "github.copilot.chat.editor.temporalContext.enabled": true,
-  "github.copilot.chat.edits.temporalContext.enabled": true,
-  "remote.SSH.experimental.chat": false,
-  "chat.viewSessions.enabled": false,
+    "azureResourceGroups.selectedSubscriptions": [],
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "peacock.affectActivityBar": false,
+    "workbench.activityBar.location": "bottom",
+    "workbench.colorTheme": "Monokai Pro",
+    "workbench.preferredDarkColorTheme": "Monokai Pro",
+    "workbench.preferredLightColorTheme": "Monokai Pro Light",
+    "window.autoDetectColorScheme": true,
+    "workbench.settings.applyToAllProfiles": [
+        "window.autoDetectColorScheme",
+        "workbench.preferredDarkColorTheme",
+        "workbench.preferredLightColorTheme",
+        "workbench.sideBar.location",
+        "workbench.secondaryBar.location",
+        "workbench.tree.indent"
+    ],
+    "workbench.tree.indent": 14,
+    "chat.viewSessions.orientation": "stacked",
+    "claudeCode.selectedModel": "default",
+    "claudeCode.preferredLocation": "panel",
+    "workbench.sideBar.location": "right",
+    "workbench.secondaryBar.location": "left"
 }
