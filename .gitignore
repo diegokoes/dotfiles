@@ -2,3 +2,4 @@
 VSCode/.config/Code/User/profiles/*
 VSCode/.config/Code/User/profiles/*
 ncspot/.config/ncspot/userstate.cbor
+.claude/settings.json
