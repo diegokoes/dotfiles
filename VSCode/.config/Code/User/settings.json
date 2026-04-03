@@ -37,7 +37,7 @@
     ],
     "workbench.tree.indent": 14,
     "chat.viewSessions.orientation": "stacked",
-    "claudeCode.selectedModel": "default",
+    "claudeCode.selectedModel": "opus",
     "claudeCode.preferredLocation": "panel",
     "workbench.sideBar.location": "right",
     "workbench.secondaryBar.location": "left"
