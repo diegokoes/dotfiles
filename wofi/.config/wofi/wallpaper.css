@@ -1,0 +1,65 @@
+* {
+  all: unset;
+  font-family: 'CodeNewRoman Nerd Font Mono', monospace;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  text-shadow: none;
+  background-color: transparent;
+}
+
+window {
+  all: unset;
+  padding: 20px;
+  border-radius: 10px;
+  background-image: url('/home/koes/dotfiles/wofi/.config/wofi/mountains.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#inner-box {
+  margin: 2px;
+  padding: 5px;
+}
+
+#outer-box {
+  border: none;
+}
+
+#scroll {
+  margin: 0px;
+  padding: 20px;
+}
+
+#input {
+  all: unset;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+  border-radius: 10px;
+}
+
+#entry {
+  border: none;
+  margin: 5px;
+  padding: 5px;
+}
+
+#entry:selected {
+  border-left: 4px solid rgba(255, 255, 255, 0.6);
+  border-radius: 0;
+  background-color: transparent;
+  padding-left: 12px;
+}
+
+#entry:selected #text {
+  color: rgb(228, 228, 228);
+}
+
+#img {
+  min-width: 80px;
+  min-height: 80px;
+  margin-right: 10px;
+  border-radius: 4px;
+}

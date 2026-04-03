@@ -1,0 +1,129 @@
+@theme "/dev/null"
+@import "colors.rasi"
+
+configuration {
+    modi:           "drun";
+    font:           "CodeNewRoman Nerd Font Mono 11";
+    show-icons:     true;
+}
+
+window {
+    transparency:       "real";
+    location:           center;
+    anchor:             center;
+    fullscreen:         false;
+    width:              1000px;
+    enabled:            true;
+    border:             2px solid;
+    border-color:       @secondary-container;
+    border-radius:      15px;
+    cursor:             "default";
+    background-color:   @on-primary-fixed;
+}
+
+mainbox {
+    enabled:            true;
+    spacing:            0px;
+    background-color:   transparent;
+    orientation:        horizontal;
+    children:           [ "imagebox", "listbox" ];
+}
+
+imagebox {
+    padding:            20px;
+    background-color:   transparent;
+    background-image:   url("~/.config/hypr/current_wallpaper", height);
+    orientation:        vertical;
+    children:           [ "inputbar", "dummy" ];
+}
+
+listbox {
+    spacing:            20px;
+    padding:            20px;
+    background-color:   transparent;
+    orientation:        vertical;
+    children:           [ "listview" ];
+}
+
+dummy {
+    background-color:   transparent;
+}
+
+inputbar {
+    enabled:            true;
+    spacing:            10px;
+    padding:            15px;
+    border-radius:      10px;
+    background-color:   @on-primary;
+    text-color:         @on-surface;
+    children:           [ "textbox-prompt-colon", "entry" ];
+}
+
+textbox-prompt-colon {
+    enabled:            true;
+    expand:             false;
+    str:                "  ";
+    background-color:   inherit;
+    text-color:         inherit;
+}
+
+entry {
+    enabled:            true;
+    background-color:   inherit;
+    text-color:         inherit;
+    cursor:             text;
+    placeholder:        "Search wallpaper";
+    placeholder-color:  inherit;
+}
+
+listview {
+    enabled:            true;
+    columns:            1;
+    lines:              8;
+    cycle:              true;
+    dynamic:            true;
+    scrollbar:          false;
+    layout:             vertical;
+    fixed-height:       true;
+    fixed-columns:      true;
+    spacing:            10px;
+    background-color:   transparent;
+    text-color:         @on-surface;
+    cursor:             "default";
+}
+
+element {
+    enabled:            true;
+    spacing:            15px;
+    padding:            8px;
+    border-radius:      10px;
+    background-color:   transparent;
+    text-color:         @on-surface;
+    cursor:             pointer;
+}
+
+element selected.normal {
+    background-color:   @primary;
+    text-color:         @on-secondary;
+}
+
+element-icon {
+    background-color:   transparent;
+    size:               48px;
+    cursor:             inherit;
+}
+
+element-text {
+    background-color:   transparent;
+    text-color:         inherit;
+    cursor:             inherit;
+    vertical-align:     0.5;
+    horizontal-align:   0.0;
+}
+
+error-message {
+    padding:            15px;
+    border-radius:      20px;
+    background-color:   @on-primary;
+    text-color:         @on-surface;
+}

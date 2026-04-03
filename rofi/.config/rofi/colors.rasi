@@ -1,0 +1,10 @@
+* {
+    on-primary-fixed:        rgba(15, 15, 20, 0.92);
+    on-primary:              rgba(25, 25, 38, 0.90);
+    primary:                 rgba(255, 255, 255, 0.15);
+    primary-fixed:           #e4e4e4;
+    on-surface:              #e4e4e4;
+    on-secondary:            #ffffff;
+    secondary-container:     rgba(255, 255, 255, 0.5);
+    error:                   #cf6679;
+}
