@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 WALLPAPER_DIR="$HOME/Pictures/wallpapers"
-TRANSITIONS=(wipe grow shrink)
+TRANSITIONS=(center outer)
 
 pkill -x rofi 2>/dev/null
 
@@ -27,4 +27,4 @@ if ! awww query &>/dev/null; then
     sleep 0.5
 fi
 
-awww img "$WALLPAPER" --transition-type "$TRANSITION"
+awww img "$WALLPAPER" --transition-type "$TRANSITION" --transition-fps 60 --transition-duration 2
