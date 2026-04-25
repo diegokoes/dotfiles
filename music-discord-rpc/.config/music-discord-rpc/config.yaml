@@ -45,6 +45,7 @@ disable_mpris_art_url: false
 # The order matters and the first is the most important.
 allowlist:
   - "Spotify"
+  - "fooyin"
 #   - "Chrome"
 #   - "Any other player"
 

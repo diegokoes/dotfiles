@@ -16,7 +16,7 @@
     "git.confirmSync": false,
     "git.autofetch": true,
     "workbench.activityBar.location": "bottom",
-    "workbench.colorTheme": "Monokai Pro",
+    "workbench.colorTheme": "Monokai Pro Light",
     "workbench.preferredDarkColorTheme": "Monokai Pro",
     "workbench.preferredLightColorTheme": "Monokai Pro Light",
     "window.autoDetectColorScheme": true,
@@ -30,7 +30,8 @@
         "editor.fontFamily",
         "terminal.integrated.fontFamily",
         "window.commandCenter",
-        "workbench.experimental.share.enabled"
+        "workbench.experimental.share.enabled",
+        "workbench.panel.opensMaximized"
     ],
     "workbench.tree.indent": 14,
     "chat.viewSessions.orientation": "stacked",
@@ -45,5 +46,9 @@
     "workbench.navigationControl.enabled": false,
     "workbench.sideBar.location": "right",
     "window.menuBarVisibility": "compact",
-    "window.commandCenter": false
+    "window.commandCenter": false,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.panel.opensMaximized": "always"
 }
