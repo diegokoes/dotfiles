@@ -1,6 +1,6 @@
 {
   "layer": "bottom",
-  "position": "top",
+  "position": "bottom",
   "modules-left": [
     "network",
     "hyprland/window"
@@ -82,7 +82,7 @@
         3,
         4,
         5,
-        6,
+        6
       ]
     }
   },

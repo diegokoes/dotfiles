@@ -16,7 +16,7 @@
     "git.confirmSync": false,
     "git.autofetch": true,
     "workbench.activityBar.location": "bottom",
-    "workbench.colorTheme": "Monokai Pro Light",
+    "workbench.colorTheme": "Monokai Pro",
     "workbench.preferredDarkColorTheme": "Monokai Pro",
     "workbench.preferredLightColorTheme": "Monokai Pro Light",
     "window.autoDetectColorScheme": true,
