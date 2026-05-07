@@ -1,6 +1,6 @@
 {
   "layer": "bottom",
-  "position": "bottom",
+  "position": "top",
   "modules-left": [
     "network",
     "hyprland/window"
@@ -11,6 +11,7 @@
   "modules-right": [
     "mpris",
     "tray",
+    "custom/minecraft",
     "custom/dnd",
     "custom/bluetooth",
     "wireplumber",
