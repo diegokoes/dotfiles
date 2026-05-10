@@ -2,15 +2,17 @@ local colors = require("config.colors")
 
 hl.config({
     general = {
-        border_size        = 0,
+        border_size              = 0,
         col = {
             active_border   = colors.cachywhite,
             inactive_border = colors.cachymblue,
         },
-        layout        = "dwindle",
-        gaps_out      = { top = 20, right = 20, bottom = 20, left = 20 },
-        gaps_in       = { top = 5,  right = 5,  bottom = 5,  left = 5  },
-        allow_tearing = true,
+        layout                   = "dwindle",
+        gaps_out                 = { top = 20, right = 20, bottom = 20, left = 20 },
+        gaps_in                  = { top = 5,  right = 5,  bottom = 5,  left = 5  },
+        allow_tearing            = true,
+        warp_on_change_workspace = false,
+        warp_on_toggle_special   = false,
         snap = {
             enabled = true,
         },
