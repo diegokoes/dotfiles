@@ -11,11 +11,6 @@ hl.config({
         gaps_out                 = { top = 20, right = 20, bottom = 20, left = 20 },
         gaps_in                  = { top = 5,  right = 5,  bottom = 5,  left = 5  },
         allow_tearing            = true,
-        warp_on_change_workspace = false,
-        warp_on_toggle_special   = false,
-        snap = {
-            enabled = true,
-        },
     },
 
     group = {
@@ -54,7 +49,6 @@ hl.config({
 
     dwindle = {
         special_scale_factor = 0.8,
-        pseudotile           = true,
         preserve_split       = true,
     },
 
