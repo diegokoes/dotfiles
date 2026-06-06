@@ -20,23 +20,23 @@ rules = [
   # text
   { mime = "text/*",        use = "edit-nano" },
   { mime = "inode/x-empty", use = "edit-nano" },
-  { name = "*.json",        use = "edit-nano" },
-  { name = "*.md",          use = "edit-nano" },
+  { url = "*.json",         use = "edit-nano" },
+  { url = "*.md",           use = "edit-nano" },
 
   # video
   { mime = "video/*",       use = [ "play-vlc", "open-xdg", "media-info" ] },
-  { name = "*.mp4",         use = [ "play-vlc", "open-xdg", "media-info" ] },
-  { name = "*.mkv",         use = [ "play-vlc", "open-xdg", "media-info" ] },
-  { name = "*.webm",        use = [ "play-vlc", "open-xdg", "media-info" ] },
+  { url = "*.mp4",          use = [ "play-vlc", "open-xdg", "media-info" ] },
+  { url = "*.mkv",          use = [ "play-vlc", "open-xdg", "media-info" ] },
+  { url = "*.webm",         use = [ "play-vlc", "open-xdg", "media-info" ] },
 
   # images
   { mime = "image/*",       use = [ "open-xdg", "exif" ] },
 
   # HTML
-  { name = "*.html",        use = [ "open-xdg", "edit-nano" ] },
+  { url = "*.html",         use = [ "open-xdg", "edit-nano" ] },
 
   # PDFs
-  { name = "*.pdf",         use = "open-xdg" },
+  { url = "*.pdf",          use = "open-xdg" },
 
   # Archive formats
   { mime = "application/zip",          use = [ "extract" ] },
@@ -47,27 +47,29 @@ rules = [
   { mime = "application/x-bzip2",      use = [ "extract" ] },
   { mime = "application/x-xz",         use = [ "extract" ] },
   # Extension fallbacks (for uncommon MIME types)
-  { name = "*.zip",       use = [ "extract" ] },
-  { name = "*.7z",        use = [ "extract" ] },
-  { name = "*.rar",       use = [ "extract" ] },
-  { name = "*.tar",       use = [ "extract" ] },
-  { name = "*.tar.gz",    use = [ "extract" ] },
-  { name = "*.tgz",       use = [ "extract" ] },
-  { name = "*.tar.bz2",   use = [ "extract" ] },
-  { name = "*.tbz2",      use = [ "extract" ] },
-  { name = "*.tar.xz",    use = [ "extract" ] },
-  { name = "*.txz",       use = [ "extract" ] },
+  { url = "*.zip",        use = [ "extract" ] },
+  { url = "*.7z",         use = [ "extract" ] },
+  { url = "*.rar",        use = [ "extract" ] },
+  { url = "*.tar",        use = [ "extract" ] },
+  { url = "*.tar.gz",     use = [ "extract" ] },
+  { url = "*.tgz",        use = [ "extract" ] },
+  { url = "*.tar.bz2",    use = [ "extract" ] },
+  { url = "*.tbz2",       use = [ "extract" ] },
+  { url = "*.tar.xz",     use = [ "extract" ] },
+  { url = "*.txz",        use = [ "extract" ] },
 
   # Fallback
-  { name = "*",             use = "open-xdg" },
+  { url = "*",              use = "open-xdg" },
 ]
 
 [[plugin.prepend_fetchers]]
-id   = "git"
-name = "*"
-run  = "git"
+id    = "git"
+url   = "*"
+run   = "git"
+group = "git"
 
 [[plugin.prepend_fetchers]]
-id   = "git"
-name = "*/"
-run  = "git"
+id    = "git"
+url   = "*/"
+run   = "git"
+group = "git"
