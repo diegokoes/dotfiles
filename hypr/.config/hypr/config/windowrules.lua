@@ -32,7 +32,7 @@ hl.window_rule({ match = { initial_title = "^(DevTools)$" }, float = true })
 hl.window_rule({ match = { class = "^(org.qbittorrent.qBittorrent)$" }, float = true, move = {560, 250}, size = {1200, 600}, center = true })
 
 -- Discord (vesktop) - special workspace, monitor-agnostic
-hl.window_rule({ match = { class = "^(vesktop)$" }, workspace = "special:discord silent", render_unfocused = true })
+hl.window_rule({ match = { class = "^(vesktop)$" }, workspace = "special:discord silent", fullscreen = true, opacity = 1 })
 
 -- Fooyin music - Workspace 9 fullscreen
 hl.window_rule({ match = { class = "^(org.fooyin.fooyin|fooyin)$" }, workspace = "9 silent", fullscreen = true })
