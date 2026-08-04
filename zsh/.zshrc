@@ -73,3 +73,9 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# Run Calibre under the system Python (3.14) so it finds PyQt6,
+# instead of the pyenv-shimmed python that shadows it.
+alias calibre='PYENV_VERSION=system calibre'
+alias calibredb='PYENV_VERSION=system calibredb'
+alias ebook-convert='PYENV_VERSION=system ebook-convert'

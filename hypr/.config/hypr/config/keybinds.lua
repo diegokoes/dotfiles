@@ -167,11 +167,13 @@ hl.bind(mainMod .. " + slash",  hl.dsp.focus({ workspace = "previous" }))
 
 -- ======= Monitor Rotation Submap =======
 hl.bind(mainMod .. " + R", hl.dsp.submap("monitor_rotate"))
-hl.define_submap("monitor_rotate", function()
-    -- Rotate external monitor to vertical (manga mode)
-    hl.bind("V", hl.dsp.exec_cmd([[bash -c 'hyprctl keyword monitor "desc:BNQ BenQ GW2790 X1R0145601Q, 1920x1080@100, 1920x0, 1, transform, 1" && hyprctl dispatch submap reset']]))
-    -- Rotate external monitor back to horizontal
-    hl.bind("H", hl.dsp.exec_cmd([[bash -c 'hyprctl keyword monitor "desc:BNQ BenQ GW2790 X1R0145601Q, 1920x1080@100, 1920x0, 1, transform, 0" && hyprctl dispatch submap reset']]))
+hl.define_submap("monitor_rotate", "reset", function()
+    hl.bind("v", function()
+        hl.monitor({ output = "desc:BNQ BenQ GW2790 X1R0145601Q", mode = "1920x1080@100", position = "1920x0", scale = 1, transform = 1 })
+    end)
+    hl.bind("h", function()
+        hl.monitor({ output = "desc:BNQ BenQ GW2790 X1R0145601Q", mode = "1920x1080@100", position = "1920x0", scale = 1, transform = 0 })
+    end)
     hl.bind("escape", hl.dsp.submap("reset"))
 end)
 
