@@ -59,5 +59,10 @@
         "**/.gitea/workflows/*.yaml",
         "**/.forgejo/workflows/*.yml",
         "**/.forgejo/workflows/*.yaml"
-    ]
+    ],
+    "extensions.supportAgentsWindow": {
+        "monokai.theme-monokai-pro-vscode": true
+    },
+    "explorer.confirmDelete": false,
+    "terminal.integrated.initialHint": false
 }

@@ -15,7 +15,7 @@ hl.bind(mainMod .. " + C",            hl.dsp.exec_cmd("code /home/koes/programmi
 hl.bind(mainMod .. " + F",            hl.dsp.exec_cmd(d.browser))
 hl.bind(mainMod .. " + SHIFT + C",    hl.dsp.exec_cmd("hyprpicker -a -f hex -l"))
 hl.bind(mainMod .. " + SHIFT + T",    hl.dsp.exec_cmd("thunderbird"))
-hl.bind(mainMod .. " + Z",            hl.dsp.exec_cmd("zeditor programming"))
+hl.bind(mainMod .. " + Z",            hl.dsp.exec_cmd("~/.config/hypr/scripts/open-project.sh"))
 hl.bind(mainMod .. " + H",            hl.dsp.exec_cmd("helium-browser"))
 hl.bind(mainMod .. " + V",            hl.dsp.exec_cmd("vivaldi"))
 hl.bind(mainMod .. " + SHIFT + Q",    hl.dsp.exec_cmd("qbittorrent"))
