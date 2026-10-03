@@ -79,3 +79,8 @@ esac
 alias calibre='PYENV_VERSION=system calibre'
 alias calibredb='PYENV_VERSION=system calibredb'
 alias ebook-convert='PYENV_VERSION=system ebook-convert'
+
+# MSI EC performance modes (needs the msi-ec module)
+alias comfort='echo comfort | sudo tee /sys/devices/platform/msi-ec/shift_mode'
+alias turbo='echo turbo | sudo tee /sys/devices/platform/msi-ec/shift_mode'
+alias ecmode='cat /sys/devices/platform/msi-ec/shift_mode'
