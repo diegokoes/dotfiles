@@ -1,6 +1,6 @@
 # dotfiles
 
-CachyOS + Hyprland laptop. One dir = one stow package.
+CachyOS + Hyprland laptop
 
 ## Desktop
 
@@ -34,14 +34,3 @@ CachyOS + Hyprland laptop. One dir = one stow package.
 ## System
 
 * [system](system) – package lists, pacman/paru/logind conf, and manual setup notes.
-
-- - -
-
-Clone into `~/dotfiles`, then:
-
-```bash
-stow hypr wofi ghostty yazi lsd fastfetch btop tealdeer music-discord-rpc zathura
-stow --no-folding zsh git zed fuzzel darkman clipse fooyin
-```
-
-`--no-folding` links individual files, so app state in those directories stays out of the repo.
