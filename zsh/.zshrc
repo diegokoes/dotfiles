@@ -24,8 +24,9 @@ eval "$(pyenv init - zsh)"
 source <(fzf --zsh)
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=10000
+SAVEHIST=10000
+setopt hist_ignore_all_dups share_history
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
