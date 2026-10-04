@@ -1,40 +1,46 @@
 # dotfiles
 
-Concise list of what's here. One dir = one app/config.
+CachyOS + Hyprland laptop. One dir = one stow package.
 
-## Desktop / Environment
+## Desktop
 
-* [hypr](hypr/.config/hypr) – Hyprland compositor + rules, idle, lock, wallpaper.
-* [waybar](waybar/.config/waybar) – bar modules + style.
-* [wofi](wofi/.config/wofi) – launcher + theme.
-* [mako](mako/.config/mako) – notifications.
-* [darkman](darkman/.config/darkman) – auto light/dark.
-* [gammastep](gammastep/.config/gammastep) – night color temp.
+* [hypr](hypr/.config/hypr) – Hyprland (Lua config), hyprlock, hypridle, hyprsunset, scripts.
+* [wofi](wofi/.config/wofi) – app launcher.
+* [fuzzel](fuzzel/.config/fuzzel) – picker for the wallpaper and project scripts.
+* [darkman](darkman) – auto light/dark, plus the GTK switch scripts.
+* [clipse](clipse/.config/clipse) – clipboard manager.
 
 ## Terminal & Shell
 
-* [ghostty](ghostty/.config/ghostty) – terminal profile.
-* [zsh](zsh/.zshrc) – shell (`.zshrc` and extras).
-* [lsd](lsd/.config/lsd) – modern ls config.
-* [yazi](yazi/.config/yazi) – TUI file manager theme/keys.
-* [fastfetch](fastfetch/.config/fastfetch) – system info banner.
-* [btop](btop/.config/btop) – resource monitor theme.
-* [tealdeer](tealdeer/.config/tealdeer) – tldr client config.
+* [ghostty](ghostty/.config/ghostty) – terminal.
+* [zsh](zsh) – `.zshrc`, `.zshenv`, `.zprofile` (starts Hyprland on tty1), `.p10k.zsh`.
+* [git](git) – `.gitconfig` and global ignore.
+* [yazi](yazi/.config/yazi) – file manager, plugins and flavors.
+* [lsd](lsd/.config/lsd) – ls replacement.
+* [fastfetch](fastfetch/.config/fastfetch) – system info.
+* [btop](btop/.config/btop) – resource monitor.
+* [tealdeer](tealdeer/.config/tealdeer) – tldr client.
 
-## Editors
+## Editor
 
-* [nvim](nvim/.config/nvim) – Neovim lua config.
-* [VSCode](VSCode/.config/Code/User) – settings, keybindings, profiles.
+* [zed](zed/.config/zed) – settings and keymap.
 
-## Music / Media
+## Music
 
-* [ncspot](ncspot/.config/ncspot) – TUI Spotify client (config + userstate).
-* [music-discord-rpc](music-discord-rpc/.config/music-discord-rpc) – MPRIS rich presence
+* [fooyin](fooyin/.config/fooyin) – music player config and layout.
+* [music-discord-rpc](music-discord-rpc/.config/music-discord-rpc) – MPRIS rich presence.
 
-## Configs
+## System
 
-* [configs](non-stowed-configs) – Non stowed various configs
+* [system](system) – package lists, pacman/paru/logind conf, and manual setup notes.
 
 - - -
 
-`To copy my configs. clone, then symlink as needed into $HOME with stow.`
+Clone into `~/dotfiles`, then:
+
+```bash
+stow hypr wofi ghostty yazi lsd fastfetch btop tealdeer music-discord-rpc
+stow --no-folding zsh git zed fuzzel darkman clipse fooyin
+```
+
+`--no-folding` links individual files, so app state in those directories stays out of the repo.
