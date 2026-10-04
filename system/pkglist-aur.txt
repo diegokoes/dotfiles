@@ -1,0 +1,10 @@
+clipse
+ivpn
+ivpn-ui
+minecraft-launcher
+minecraft-server
+msi-ec-dkms-git
+music-discord-rpc-bin
+rose-pine-hyprcursor
+vesktop
+xpadneo-dkms-git

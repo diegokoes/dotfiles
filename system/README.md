@@ -1,4 +1,23 @@
-# Configs
+# System
+
+Things that live outside `$HOME` or can't be stowed.
+
+## Files here
+
+| File | Goes to |
+|---|---|
+| `logind.conf` | `/etc/systemd/logind.conf` (lid switch ignored) |
+| `pacman.conf` | `/etc/pacman.conf` |
+| `paru.conf` | `/etc/paru.conf` |
+| `pkglist-native.txt` | explicitly installed repo packages |
+| `pkglist-aur.txt` | explicitly installed AUR packages |
+
+Regenerate the lists with `./update-pkglists.sh`. Restore with:
+
+```bash
+sudo pacman -S --needed - < pkglist-native.txt
+paru -S --needed - < pkglist-aur.txt
+```
 
 ## start-wayland script
 
@@ -15,15 +34,6 @@ Script in `~/.zprofile` to auto-start Hyprland on tty1 login
    3 │   exec start-hyprland
    4 │ fi
 ```
-
-</details>
-
-## skip discord update check
-
-<details>
-<summary>View config</summary>
-
-on .config/discord/settings.json >> "SKIP_HOST_UPDATE": true
 
 </details>
 
@@ -74,44 +84,5 @@ Edit `/usr/share/applications/vesktop.desktop` and add the `--ozone-platform-hin
 ```desktop
 Exec=/usr/bin/vesktop --ozone-platform-hint=auto %U
 ```
-
-</details>
-
-## gammastep
-
-> Without uncommenting these, gammastep starts before Wayland
-
-<details>
-<summary>View systemd override</summary>
-
-### Editing /home/koes/.config/systemd/user/gammastep.service.d/ove>
-
-### Anything between here and the comment below will become the con>
-
-### Edits below this comment will be discarded
-
-### /usr/lib/systemd/user/gammastep.service
-
-# [Unit]
-
-# Description=Display colour temperature adjustment
-
-# PartOf=graphical-session.target
-
-# After=graphical-session.target
-
-#
-
-# [Service]
-
-# ExecStart=/usr/bin/gammastep
-
-# Restart=on-failure
-
-#
-
-# [Install]
-
-# WantedBy=graphical-session.target
 
 </details>
