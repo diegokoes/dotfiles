@@ -1,0 +1,9 @@
+[user]
+	name = diegokoes
+	email = nb1jcdfz@proton.me
+[init]
+	defaultBranch = main
+[color]
+	ui = auto
+[credential]
+	helper = store
