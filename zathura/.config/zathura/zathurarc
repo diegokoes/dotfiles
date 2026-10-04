@@ -1,0 +1,3 @@
+# Selecting text with the mouse copies it straight to the system clipboard
+# (zathura has no copy command; Ctrl+C is "abort" by default)
+set selection-clipboard clipboard
