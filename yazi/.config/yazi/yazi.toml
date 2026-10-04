@@ -12,6 +12,17 @@ edit = [
   { run = "zeditor %s",       desc = "Zed",     for = "linux", orphan = true },
   { run = "${EDITOR:-vi} %s", desc = "$EDITOR", for = "unix",  block = true },
 ]
+browser = [
+  { run = "firefox-developer-edition %s", desc = "Firefox", for = "linux", orphan = true },
+]
+
+[[open.prepend_rules]]
+mime = "application/pdf"
+use  = [ "open", "browser", "reveal" ]
+
+[[open.prepend_rules]]
+mime = "text/html"
+use  = [ "edit", "browser", "reveal" ]
 
 [[plugin.prepend_fetchers]]
 url   = "*"
