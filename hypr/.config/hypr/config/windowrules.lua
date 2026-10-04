@@ -1,14 +1,11 @@
 -- Floating / Transient & Utility Windows
 hl.window_rule({ match = { class = "^(xdg-desktop-portal-gtk|xdg-desktop-portal-kde|xdg-desktop-portal-hyprland)(.*)$" }, float = true })
-hl.window_rule({ match = { class = "^(polkit-gnome-authentication-agent-1|hyprpolkitagent|org.org.kde.polkit-kde-authentication-agent-1)(.*)$" }, float = true })
+hl.window_rule({ match = { class = "^(polkit-gnome-authentication-agent-1|hyprpolkitagent|org.kde.polkit-kde-authentication-agent-1)(.*)$" }, float = true })
 hl.window_rule({ match = { class = "^(CachyOSHello)$" }, float = true })
 hl.window_rule({ match = { class = "^(zenity)$" }, float = true })
 hl.window_rule({ match = { class = "^(org.pulseaudio.pavucontrol)$" }, float = true, center = true, size = {1400, 700} })
 hl.window_rule({ match = { class = "^(org.gnome.Calculator)$" }, float = true })
 hl.window_rule({ match = { class = "^(com.mitchellh.ghostty)$" }, center = true })
-
--- VSCode tiling
-hl.window_rule({ match = { class = "^(Code)$" }, tile = true, suppress_event = "maximize" })
 
 -- Zed
 hl.window_rule({ match = { class = "^(dev.zed.Zed)$" }, tile = true, suppress_event = "maximize" })
@@ -53,7 +50,6 @@ hl.window_rule({
 
 -- Browser / App-specific tweaks
 hl.window_rule({ match = { class = "^(firefox-developer-edition)$", title = "negative:^(Picture-in-Picture)$" }, no_blur = true, tile = true, fullscreen_state = "2 1" })
-hl.window_rule({ match = { class = "^(vivaldi-stable)$" }, no_blur = true, tile = true, fullscreen_state = "1 1", suppress_event = "maximize fullscreen" })
 hl.window_rule({ match = { class = "^(Tor Browser)$" }, no_blur = true, tile = true, suppress_event = "maximize fullscreen" })
 hl.window_rule({ match = { class = "^(helium)$" }, no_blur = true, tile = true, suppress_event = "maximize fullscreen" })
 
@@ -66,5 +62,5 @@ hl.window_rule({ match = { class = "^(wofi)$" }, float = true, rounding = 16, ce
 
 -- Layer rules
 hl.layer_rule({ match = { namespace = "logout_dialog" }, animation = "slide top" })
-hl.layer_rule({ match = { namespace = "waybar" },        animation = "popin 50%" })
 hl.layer_rule({ match = { namespace = "wallpaper" },     animation = "fade 50%" })
+hl.layer_rule({ match = { namespace = "launcher" },      no_anim = true, dim_around = true })

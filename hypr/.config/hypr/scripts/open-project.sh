@@ -30,7 +30,7 @@ selection=$(
     printf '%s\n' "${projects[@]}" |
         sed "s#^$HOME#~#" |
         sort -f |
-        rofi -dmenu -i -p "Open project" -matching fuzzy
+        fuzzel --dmenu -p "Open project  "
 ) || exit 0
 
 [[ -n "$selection" ]] || exit 0

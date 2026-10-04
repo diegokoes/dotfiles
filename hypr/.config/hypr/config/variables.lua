@@ -36,8 +36,6 @@ hl.config({
         font_family             = "Fira Sans",
         disable_hyprland_logo   = true,
         background_color        = colors.cachydblue,
-        enable_swallow          = true,
-        swallow_regex           = "^(cachy-browser|firefox|nautilus|nemo|thunar|btrfs-assistant.)$",
         focus_on_activate       = true,
         vrr                     = 2,
         middle_click_paste      = false,

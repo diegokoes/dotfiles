@@ -11,15 +11,11 @@ hl.bind(mainMod .. " + J",            hl.dsp.layout("togglesplit"))
 -- ======= App Shortcuts =======
 hl.bind(mainMod .. " + SPACE",        hl.dsp.exec_cmd(d.applauncher))
 hl.bind(mainMod .. " + O",            hl.dsp.exec_cmd("obsidian"))
-hl.bind(mainMod .. " + C",            hl.dsp.exec_cmd("code /home/koes/programming"))
 hl.bind(mainMod .. " + F",            hl.dsp.exec_cmd(d.browser))
 hl.bind(mainMod .. " + SHIFT + C",    hl.dsp.exec_cmd("hyprpicker -a -f hex -l"))
-hl.bind(mainMod .. " + SHIFT + T",    hl.dsp.exec_cmd("thunderbird"))
 hl.bind(mainMod .. " + Z",            hl.dsp.exec_cmd("~/.config/hypr/scripts/open-project.sh"))
 hl.bind(mainMod .. " + H",            hl.dsp.exec_cmd("helium-browser"))
-hl.bind(mainMod .. " + V",            hl.dsp.exec_cmd("vivaldi"))
 hl.bind(mainMod .. " + SHIFT + Q",    hl.dsp.exec_cmd("qbittorrent"))
-hl.bind(mainMod .. " + I",            hl.dsp.exec_cmd("intellij-idea-ultimate-edition"))
 
 -- ======= Dedicated App Workspaces =======
 -- Discord: special workspace, monitor-agnostic
@@ -52,8 +48,7 @@ hl.bind(mainMod .. " + SHIFT + V",    hl.dsp.exec_cmd("[float; size 622 652] " .
 hl.bind(mainMod .. " + G",            hl.dsp.exec_cmd(d.terminal .. " -e gdu /"))
 
 -- ======= Scripts =======
-hl.bind(mainMod .. " + M",            hl.dsp.exec_cmd("/home/koes/.config/waybar/scripts/dnd.sh toggle"))
-hl.bind(mainMod .. " + SHIFT + K",    hl.dsp.exec_cmd("/home/koes/.config/hypr/config/scripts/toggle-waybar.sh"))
+hl.bind(mainMod .. " + M",            hl.dsp.exec_cmd("swaync-client -d"))
 hl.bind(mainMod .. " + W",            hl.dsp.exec_cmd("~/.config/hypr/scripts/wallpaper.sh"))
 
 -- ======= Screenshots =======
@@ -81,7 +76,6 @@ hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("brightnessctl s 5%-"), { locke
 
 -- ======= System =======
 hl.bind(mainMod .. " + L",            hl.dsp.exec_cmd(d.lockdaemon))
-hl.bind(mainMod .. " + SHIFT + O",    hl.dsp.exec_cmd("killall -SIGUSR2 waybar"))
 hl.bind(mainMod .. " + ALT + F4",     hl.dsp.exec_cmd(d.terminal .. " -e shutdown now"))
 hl.bind(mainMod .. " + ALT + F5",     hl.dsp.exec_cmd(d.terminal .. " -e reboot"))
 
