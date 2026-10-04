@@ -24,6 +24,7 @@ CachyOS + Hyprland laptop. One dir = one stow package.
 ## Editor
 
 * [zed](zed/.config/zed) – settings and keymap.
+* [zathura](zathura/.config/zathura) – PDF viewer; mouse selection goes to the clipboard.
 
 ## Music
 
@@ -39,7 +40,7 @@ CachyOS + Hyprland laptop. One dir = one stow package.
 Clone into `~/dotfiles`, then:
 
 ```bash
-stow hypr wofi ghostty yazi lsd fastfetch btop tealdeer music-discord-rpc
+stow hypr wofi ghostty yazi lsd fastfetch btop tealdeer music-discord-rpc zathura
 stow --no-folding zsh git zed fuzzel darkman clipse fooyin
 ```
 
