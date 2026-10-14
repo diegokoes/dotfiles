@@ -58,7 +58,7 @@
                                                                 "ShowScrollbar": true,
                                                                 "ShowSummary": true,
                                                                 "Source": -1,
-                                                                "State": "AAAAJXjaY2BgYGRgYHjJAKFBgNH+A5QBFWAAAC75Ah0="
+                                                                "State": "AAAAJXjaY2BgYGRgYHjCAKFBgNH+A5QBFWAAAC5jAhg="
                                                             }
                                                         },
                                                         {
@@ -90,7 +90,7 @@
                                                                 "ShowScrollbar": true,
                                                                 "ShowSummary": true,
                                                                 "Source": -1,
-                                                                "State": "AAAAJXjaY2BgYAQiAQYwDQaM9h+gDKgAAwAVqgFF"
+                                                                "State": "AAAAJXjaY2BgYAQiLgYwDQaM9h+gDKgAAwAU9gE/"
                                                             }
                                                         }
                                                     ]
@@ -206,7 +206,7 @@
         }
     ],
     "WindowSize": {
-        "Height": 1080,
-        "Width": 1920
+        "Height": 1040,
+        "Width": 1880
     }
 }
