@@ -287,7 +287,7 @@
   "show_whitespaces": "none",
   "wrap_guides": [80, 120],
   "preferred_line_length": 120,
-  "soft_wrap": "prefer_line",
+  "soft_wrap": "bounded",
   "hard_tabs": false,
   "tab_size": 2,
   "ui_font_size": 16,
