@@ -248,7 +248,7 @@
     "hide_hidden": false,
     "default_width": 250.2,
     "dock": "right",
-    "auto_fold_dirs": false,
+    "auto_fold_dirs": true,
   },
   "base_keymap": "VSCode",
   "preview_tabs": {
