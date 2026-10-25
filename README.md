@@ -9,6 +9,7 @@ CachyOS + Hyprland laptop
 * [fuzzel](fuzzel/.config/fuzzel) - launcher
 * [darkman](darkman) - theme switcher
 * [clipse](clipse/.config/clipse) - clipboard manager
+* [steam](steam/.local/share/applications) - Steam launcher on the NVIDIA GPU
 
 ## Terminal & Shell
 
