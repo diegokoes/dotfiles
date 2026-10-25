@@ -16,9 +16,34 @@ hl.window_rule({ match = { class = "^(XIVLauncher.Core)$" }, float = true, cente
 
 -- Steam - Dedicated Workspace 8
 hl.window_rule({ match = { class = "^(steam)$" }, workspace = "8 silent", fullscreen = true, render_unfocused = true })
-hl.window_rule({ match = { class = "^(Slay the Spire)$" }, workspace = "8 silent", fullscreen = true, render_unfocused = true })
+hl.window_rule({ match = { class = "^(Slay the Spire)$" }, fullscreen = true })
 hl.window_rule({ match = { title = "^(Steam Settings)$" }, float = true, center = true })
 hl.window_rule({ match = { class = "^$", title = "^(Steam - Self Updater)$" }, float = true, center = true })
+
+-- Steam games - Dedicated Workspace 7
+-- On launch: move the game here, switch to it, and close the Steam main window
+-- to the tray (the overlay stays responsive and Steam stops redrawing it)
+local function is_steam_game(w)
+    if w.class == "steam" then return false end
+    if w.class:match("^steam_app_") then return true end
+    local f = io.open("/proc/" .. w.pid .. "/environ", "rb")
+    if not f then return false end
+    local env = f:read("a")
+    f:close()
+    return env:find("SteamGameId=", 1, true) ~= nil or env:find("SteamOverlayGameId=", 1, true) ~= nil
+end
+
+hl.on("window.open", function(w)
+    if is_steam_game(w) then
+        hl.dispatch(hl.dsp.window.move({ workspace = 7, window = "address:" .. w.address }))
+        hl.dispatch(hl.dsp.focus({ workspace = 7 }))
+        for _, s in ipairs(hl.get_windows()) do
+            if s.class == "steam" and s.title == "Steam" then
+                hl.dispatch(hl.dsp.window.close({ window = "address:" .. s.address }))
+            end
+        end
+    end
+end)
 
 -- File dialogs
 hl.window_rule({ match = { class = "^$", title = "^(Save File)$" }, float = true })

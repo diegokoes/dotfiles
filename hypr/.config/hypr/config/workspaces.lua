@@ -9,6 +9,7 @@ hl.workspace_rule({ workspace = "5", monitor = "HDMI-A-1" })
 hl.workspace_rule({ workspace = "6", monitor = "HDMI-A-1" })
 
 -- Dedicated app workspaces
+hl.workspace_rule({ workspace = "7",  monitor = "HDMI-A-1", default_name = "games" })
 hl.workspace_rule({ workspace = "8",  monitor = "HDMI-A-1", default_name = "steam" })
 hl.workspace_rule({ workspace = "9",                        default_name = "music" })
 hl.workspace_rule({ workspace = "10", monitor = "HDMI-A-1", default_name = "ffxiv" })

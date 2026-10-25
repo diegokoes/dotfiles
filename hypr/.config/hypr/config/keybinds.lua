@@ -2,7 +2,15 @@ local d = require("config.defaults")
 local mainMod = "SUPER"
 
 -- ======= Window Actions =======
-hl.bind(mainMod .. " + Q",            hl.dsp.window.close())
+-- Steam only hides its window on close, so quit it fully instead
+hl.bind(mainMod .. " + Q", function()
+    local w = hl.get_active_window()
+    if w and w.class == "steam" then
+        hl.exec_cmd("steam -shutdown")
+    else
+        hl.dispatch(hl.dsp.window.close())
+    end
+end)
 hl.bind(mainMod .. " + CTRL + V",     hl.dsp.window.float({ action = "toggle" }))
 hl.bind("CTRL + SHIFT + SPACE",       hl.dsp.window.fullscreen())
 hl.bind(mainMod .. " + Y",            hl.dsp.window.pin())
@@ -24,7 +32,10 @@ hl.bind(mainMod .. " + SHIFT + D",    hl.dsp.exec_cmd("[workspace special:discor
 
 -- Steam
 hl.bind(mainMod .. " + S",            hl.dsp.focus({ workspace = 8 }))
-hl.bind(mainMod .. " + SHIFT + S",    hl.dsp.exec_cmd("[workspace 8 silent] steam -silent"))
+hl.bind(mainMod .. " + SHIFT + S",    hl.dsp.exec_cmd("[workspace 8 silent] prime-run steam -silent"))
+
+-- Steam games (moved here automatically, see windowrules.lua)
+hl.bind(mainMod .. " + G",            hl.dsp.focus({ workspace = 7 }))
 
 -- FFXIV (launched separately by XIVLauncher)
 hl.bind(mainMod .. " + B",            hl.dsp.focus({ workspace = 10 }))
@@ -35,6 +46,7 @@ hl.bind(mainMod .. " + SHIFT + N",    hl.dsp.exec_cmd("[workspace 9 silent] fooy
 
 -- Move active window to dedicated workspaces
 hl.bind(mainMod .. " + CTRL + S",     hl.dsp.window.move({ workspace = 8 }))
+hl.bind(mainMod .. " + CTRL + G",     hl.dsp.window.move({ workspace = 7 }))
 hl.bind(mainMod .. " + CTRL + D",     hl.dsp.window.move({ workspace = "special:discord" }))
 hl.bind(mainMod .. " + CTRL + B",     hl.dsp.window.move({ workspace = 10 }))
 hl.bind(mainMod .. " + CTRL + N",     hl.dsp.window.move({ workspace = 9 }))
@@ -45,7 +57,7 @@ hl.bind(mainMod .. " + E",            hl.dsp.exec_cmd(d.terminal .. " -e " .. d.
 hl.bind(mainMod .. " + SHIFT + W",    hl.dsp.exec_cmd(d.terminal .. " -e " .. d.wifimanager))
 hl.bind(mainMod .. " + SHIFT + B",    hl.dsp.exec_cmd(d.terminal .. " -e " .. d.bluetoothtui))
 hl.bind(mainMod .. " + SHIFT + V",    hl.dsp.exec_cmd("[float; size 622 652] " .. d.terminal .. " -e 'clipse'"))
-hl.bind(mainMod .. " + G",            hl.dsp.exec_cmd(d.terminal .. " -e gdu /"))
+hl.bind(mainMod .. " + SHIFT + G",    hl.dsp.exec_cmd(d.terminal .. " -e gdu /"))
 
 -- ======= Scripts =======
 hl.bind(mainMod .. " + M",            hl.dsp.exec_cmd("swaync-client -d"))
