@@ -3,10 +3,6 @@ local colors = require("config.colors")
 hl.config({
     general = {
         border_size              = 0,
-        col = {
-            active_border   = colors.cachywhite,
-            inactive_border = colors.cachymblue,
-        },
         layout                   = "dwindle",
         gaps_out                 = { top = 20, right = 20, bottom = 20, left = 20 },
         gaps_in                  = { top = 5,  right = 5,  bottom = 5,  left = 5  },
@@ -46,19 +42,6 @@ hl.config({
     },
 
     dwindle = {
-        special_scale_factor = 0.8,
         preserve_split       = true,
-    },
-
-    master = {
-        new_status           = "master",
-        special_scale_factor = 0.8,
-    },
-
-    scrolling = {
-        column_width             = 0.5,
-        focus_fit_method         = 1,
-        fullscreen_on_one_column = true,
-        direction                = "right",
     },
 })

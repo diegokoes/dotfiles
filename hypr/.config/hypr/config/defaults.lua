@@ -3,9 +3,11 @@ return {
     applauncher   = "sh -c 'pgrep -x wofi >/dev/null && pkill -x wofi || (wofi --normal-window --show drun --insensitive >/dev/null 2>&1 &)'",
     terminal      = "ghostty",
     idlehandler   = "hypridle",
-    lockdaemon    = "hyprlock",
+    -- Goes through hypridle's lock_cmd, which won't start a second hyprlock
+    lock          = "loginctl lock-session",
     wifimanager   = "impala",
     browser       = "firefox-developer-edition",
     bluetoothtui  = "bluetui",
     volumecontrol = "pavucontrol",
+    discord       = "vesktop --ozone-platform-hint=auto --enable-blink-features=MiddleClickAutoscroll",
 }
