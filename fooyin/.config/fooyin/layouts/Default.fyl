@@ -3,6 +3,9 @@
     "Options": {
         "ApplyWindowSize": true
     },
+    "ToolbarState": "AAAA/wAAAAH9AAAAAAAAB4AAAAQdAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAE0AZQBuAHUAVABvAG8AbABiAGEAcgAAAAAA/////wAAAAAAAAAA",
+    "Toolbars": [
+    ],
     "Version": 1,
     "Widgets": [
         {
@@ -52,13 +55,15 @@
                                                                 "MiddleClickAction": 0,
                                                                 "PlaylistEnabled": true,
                                                                 "PlaylistName": "Filter Results",
+                                                                "RestoreState": true,
                                                                 "RowHeight": 0,
+                                                                "ScrollPosition": 0,
                                                                 "SendPlayback": true,
                                                                 "ShowHeader": true,
                                                                 "ShowScrollbar": true,
                                                                 "ShowSummary": true,
                                                                 "Source": -1,
-                                                                "State": "AAAAJXjaY2BgYGRgYHjCAKFBgNH+A5QBFWAAAC5jAhg="
+                                                                "State": "AAAAJXjaY2BgYGRgYHjJAKFBgNH+A5QBFWAAAC75Ah0="
                                                             }
                                                         },
                                                         {
@@ -84,13 +89,15 @@
                                                                 "MiddleClickAction": 0,
                                                                 "PlaylistEnabled": true,
                                                                 "PlaylistName": "Filter Results",
+                                                                "RestoreState": true,
                                                                 "RowHeight": 0,
+                                                                "ScrollPosition": 0,
                                                                 "SendPlayback": true,
                                                                 "ShowHeader": true,
                                                                 "ShowScrollbar": true,
                                                                 "ShowSummary": true,
                                                                 "Source": -1,
-                                                                "State": "AAAAJXjaY2BgYAQiLgYwDQaM9h+gDKgAAwAU9gE/"
+                                                                "State": "AAAAJXjaY2BgYAQiAQYwDQaM9h+gDKgAAwAVqgFF"
                                                             }
                                                         }
                                                     ]
@@ -107,14 +114,42 @@
                                         "ShowClearButton": false,
                                         "ShowCloseButton": false,
                                         "TabPosition": 0,
+                                        "TitleScript": "%playlist_name%",
                                         "Widgets": [
                                             {
                                                 "Playlist": {
+                                                    "AlternatingRows": true,
+                                                    "ArtworkCornerRadius": 0,
+                                                    "ArtworkReflection": false,
+                                                    "ArtworkReflectionGap": 3,
+                                                    "ArtworkReflectionHeight": 33,
+                                                    "ArtworkReflectionOpacity": 35,
+                                                    "BackgroundBlur": 0,
+                                                    "BackgroundCoverType": 0,
+                                                    "BackgroundCustomImage": "",
+                                                    "BackgroundFadeDuration": 0,
+                                                    "BackgroundImageMode": 0,
+                                                    "BackgroundMaxSize": 0,
+                                                    "BackgroundOpacity": 40,
+                                                    "BackgroundPosition": 4,
+                                                    "BackgroundScaling": 0,
+                                                    "BackgroundTrackPreference": 0,
                                                     "Columns": "8:132|3|0:2|1|7:2",
+                                                    "CustomColumns": false,
+                                                    "DoubleClickAction": 5,
                                                     "HeaderState": "AAAAZXjaY2BgYGVgYLBgYGBMB9LeUDqOASIOAoxAzATEzEDMAhK3X7cj8HWr3A77G2AqyH5L1UP3dSLVcP7OmSAwC6SR4f////8B/PQaZQ==",
                                                     "ID": "90df64238860418d9c3c2c3ff485102e",
+                                                    "ImagePadding": 5,
+                                                    "ImagePaddingTop": 0,
+                                                    "MiddleClickAction": 0,
                                                     "Preset": 3,
-                                                    "SingleMode": true
+                                                    "ShowHeader": true,
+                                                    "ShowScrollbar": true,
+                                                    "SingleMode": true,
+                                                    "StartPlaybackOnSend": false,
+                                                    "StickyArtwork": false,
+                                                    "StickyHeaders": false,
+                                                    "StickySubheaders": false
                                                 }
                                             }
                                         ]
@@ -139,6 +174,16 @@
                                             {
                                                 "Lyrics": {
                                                     "Alignment": 132,
+                                                    "BackgroundBlur": 0,
+                                                    "BackgroundCoverType": 0,
+                                                    "BackgroundCustomImage": "",
+                                                    "BackgroundFadeDuration": 0,
+                                                    "BackgroundImageMode": 0,
+                                                    "BackgroundMaxSize": 0,
+                                                    "BackgroundOpacity": 40,
+                                                    "BackgroundPosition": 4,
+                                                    "BackgroundScaling": 0,
+                                                    "BackgroundTrackPreference": 0,
                                                     "BaseFont": "",
                                                     "BottomMargin": 14,
                                                     "CentreFirstSyncedLine": false,
@@ -195,6 +240,7 @@
                                 },
                                 {
                                     "VolumeControls": {
+                                        "Curve": 4,
                                         "Mode": 3
                                     }
                                 }
@@ -206,7 +252,7 @@
         }
     ],
     "WindowSize": {
-        "Height": 1040,
-        "Width": 1880
+        "Height": 1080,
+        "Width": 1920
     }
 }
