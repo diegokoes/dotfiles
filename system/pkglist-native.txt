@@ -74,6 +74,7 @@ gst-plugin-va
 gst-plugins-bad
 gst-plugins-ugly
 helium-browser-bin
+hyphen-es
 hypridle
 hyprland
 hyprlock
@@ -86,6 +87,7 @@ intel-ucode
 iptables
 iwd
 jdk25-openjdk
+kdenlive
 kdsingleapplication
 kvantum
 kvantum-theme-nordic-git
@@ -136,6 +138,7 @@ obs-studio
 obsidian
 opencl-nvidia
 openssh
+otf-codenewroman-nerd
 pacman-contrib
 paru
 pavucontrol
@@ -163,7 +166,6 @@ qt6ct
 rebuild-detector
 resvg
 ripgrep
-rofi
 rsync
 rtkit
 sbctl
@@ -175,16 +177,21 @@ stow
 sudo
 swappy
 swaync
+sweethome3d
 switcheroo-control
 sysfsutils
 tailscale
 tealdeer
+terminus-font
 texinfo
+texstudio
 tk
 torbrowser-launcher
 tree
 ttf-bitstream-vera
 ttf-dejavu
+ttf-fira-code
+ttf-fira-sans
 ttf-firacode-nerd
 ttf-liberation
 ttf-meslo-nerd
