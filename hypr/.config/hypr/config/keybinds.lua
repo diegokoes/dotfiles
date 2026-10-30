@@ -144,7 +144,6 @@ hl.bind(mainMod .. " + CTRL + right", hl.dsp.window.move({ workspace = "+1" }))
 -- Scroll through workspaces
 hl.bind(mainMod .. " + PERIOD", hl.dsp.focus({ workspace = "e+1" }))
 hl.bind(mainMod .. " + COMMA",  hl.dsp.focus({ workspace = "e-1" }))
-hl.bind(mainMod .. " + slash",  hl.dsp.focus({ workspace = "previous" }))
 
 -- ======= Monitor Rotation Submap =======
 hl.bind(mainMod .. " + R", hl.dsp.submap("monitor_rotate"))

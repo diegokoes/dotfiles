@@ -1,3 +1,5 @@
+local monitors = require("config.monitor")
+
 -- Floating / Transient & Utility Windows
 hl.window_rule({ match = { class = "^(xdg-desktop-portal-gtk|xdg-desktop-portal-kde|xdg-desktop-portal-hyprland)(.*)$" }, float = true })
 hl.window_rule({ match = { class = "^(polkit-gnome-authentication-agent-1|hyprpolkitagent|org.kde.polkit-kde-authentication-agent-1)(.*)$" }, float = true })
@@ -59,7 +61,7 @@ hl.window_rule({ match = { class = "^(org.fooyin.fooyin|fooyin)$" }, workspace =
 hl.window_rule({
     match = { title = "^(Picture-in-Picture|Picture in picture)$" },
     float = true, pin = true, no_initial_focus = true, focus_on_activate = false,
-    size = {378, 213}, move = {1522, 847}, monitor = "eDP-1",
+    size = {378, 213}, move = {1522, 847}, monitor = monitors.laptop,
     fullscreen_state = "0 0", suppress_event = "fullscreen",
 })
 
