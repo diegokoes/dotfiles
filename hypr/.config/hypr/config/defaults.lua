@@ -1,6 +1,7 @@
 return {
     filemanager   = "yazi",
-    applauncher   = "sh -c 'pgrep -x wofi >/dev/null && pkill -x wofi || (wofi --normal-window --show drun --insensitive >/dev/null 2>&1 &)'",
+    -- Starts each app in its own systemd scope via uwsm
+    applauncher   = "~/.config/hypr/scripts/launcher.sh",
     terminal      = "ghostty",
     idlehandler   = "hypridle",
     -- Goes through hypridle's lock_cmd, which won't start a second hyprlock
