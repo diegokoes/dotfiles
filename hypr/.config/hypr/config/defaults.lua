@@ -9,5 +9,6 @@ return {
     browser       = "firefox-developer-edition",
     bluetoothtui  = "bluetui",
     volumecontrol = "pavucontrol",
-    discord       = "vesktop --ozone-platform-hint=auto --enable-blink-features=MiddleClickAutoscroll",
+    -- Flags live in ~/.config/vesktop-flags.conf (read by /usr/bin/vesktop)
+    discord       = "vesktop",
 }
